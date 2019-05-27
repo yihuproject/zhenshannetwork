@@ -30,12 +30,18 @@
                 </li>
             </ul>
         </div>
-        <div class="cases">
-            <el-carousel id="el-carousel" :interval="5000"  height="51.7rem" arrow="never" indicator-position="outside">
-                <el-carousel-item v-for="(imgArr,index) in index.cases.imgPath">
-                    <img :src="img.img" alt="" v-for="(img,index) in imgArr">
-                </el-carousel-item>
-            </el-carousel>
+        <slogan title="精美案例微站风格" detail="自由灵活设计，微站风格，为多个行业量身定制"></slogan>
+        <div class="cases" :style="{height:swiperHeight}">
+                <swiper :options="swiperOption" ref="mySwiper"  :style="{height:swiperHeight}">
+                    <!-- slides -->
+                    <swiper-slide v-for="(imgArr,index) in index.cases.imgPath">
+                        <div class="el_item_list" style="margin: 0 auto;display: flex;flex-flow: row nowrap;justify-content: space-around;" :style="{marginTop:centerHeight}">
+                            <img :src="img.img" alt="" v-for="(img,index) in imgArr"  :style="{height:swiperImgHeight}">
+                        </div>
+                    </swiper-slide>
+                    <!-- Optional controls -->
+                    <div class="swiper-pagination"  slot="pagination"></div>
+                </swiper>
         </div>
         <index-footer style="margin-top:4rem"></index-footer>
     </div>
@@ -54,6 +60,23 @@
         },
         data(){
             return {
+                swiperOption:{
+                    notNextTick:true,
+                    loop:true,
+                    autoplay:true,
+                    autoplay:{
+                      delay:5000,
+                        stopOnLastSlide:false,
+                        disableOnInteraction:false
+                    },
+                    speed:1500,
+                    grabCursor:true,
+                    initialSlide:0,//初始化索引
+                    pagination:{
+                        el:'.swiper-pagination',
+                        clickable:true
+                    }
+                },
                 index:{
                     title: "什么是微官网小程序？",
                     detail:"微官网小程序主要展示企业产品，企业案例，企业文化，企业资讯等，不仅可以宣传企业形象和企业文化，还是企业营销的入口",  
@@ -139,17 +162,29 @@
                                 {img:"/static/images/solution_cases/ofw_icon_bnt_2.png"},
                                 {img:"/static/images/solution_cases/ofw_icon_bnt_3.png"},
                                 {img:"/static/images/solution_cases/ofw_icon_bnt_4.png"}
-                            ],
-                            [
-                                {img:"/static/images/solution_cases/ofw_icon_bnt_1.png"},
-                                {img:"/static/images/solution_cases/ofw_icon_bnt_2.png"},
-                                {img:"/static/images/solution_cases/ofw_icon_bnt_3.png"},
-                                {img:"/static/images/solution_cases/ofw_icon_bnt_4.png"}
                             ]
                         ]
                     }
                 }
             }
+        },
+        computed: {
+            swiperHeight() {
+                return `${100*800/1920}vw`;
+            },
+            swiper() {
+                return this.$refs.mySwiper.swiper;
+            },
+            swiperImgHeight(){
+                return `${75*250/664}vw`;
+            },
+            centerHeight(){
+                return `${((100*800/1920)-(75*250/664))/2}vw`;
+            }
+        },
+        mounted(){
+            console.log('this is current swiper instance object', this.swiper);
+            this.swiper.slideTo(3, 1000, false);
         }
     }
 </script>
@@ -187,7 +222,7 @@
                         height: 4.5rem
                         position:absolute
                         z-index:3
-                        transition:all .8s ease-in
+                        transition:all .5s ease-in
                     li:nth-child(-n+6):hover
                         transform:translateX(-50px)
                     li:nth-child(n+6):hover
@@ -262,9 +297,9 @@
                     .site_item_icon
                         width: 12rem
                         height: 12rem
-                        transition:all .8s ease-in
+                        transition:all .5s ease-in
                     .site_item_icon:hover
-                        transform:rotate(-10deg);
+                        transform:translateY(-20px)
                         img
                             width: 12rem
                             height: 12rem
@@ -280,4 +315,9 @@
                             margin-top: 1rem
                             font-size:14px
                             color:#666
+    @keyframes phone
+        from
+            transform: rotateX(-20deg)
+        to
+            transform: rotateX(20deg)
 </style>

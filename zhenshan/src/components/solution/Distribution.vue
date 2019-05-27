@@ -5,6 +5,7 @@
         <transition-block></transition-block>
         <func></func>
         <advantages></advantages>
+        <demand></demand>
         <reward></reward>
         <analyze></analyze>
         <support></support>
@@ -19,6 +20,7 @@
     import transitionBlock from "./distribution/cases"
     import func from "./distribution/func"
     import advantages from "./distribution/advantages"
+    import demand from "./distribution/demand"
     import reward from "./distribution/reward"
     import analyze from "./distribution/analyze"
     import support from "./distribution/support"
@@ -34,7 +36,8 @@
             reward,
             analyze,
             indexFooter,
-            support
+            support,
+            demand
         },
         data() {
             return {

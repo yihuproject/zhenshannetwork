@@ -56,7 +56,7 @@
         mounted(){
              window.addEventListener("scroll",()=>{
                 var scroll = document.documentElement.scrollTop || document.body.scrollTop || window.pageYOffset;
-                if(scroll>50){
+                if(scroll>1700){
                     this.servicesMap.account[0].title = 1500;
                     this.servicesMap.account[1].title = 99;
                     this.servicesMap.account[2].title = 10000;

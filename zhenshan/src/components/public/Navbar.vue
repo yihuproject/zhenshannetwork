@@ -3,10 +3,24 @@
 	<div class="navbar_hover_back">
 		<div class="container">
 			<div class="logo">
-				{{header.logo.text}}
+				<router-link to="/">{{header.logo.text}}</router-link>
 			</div>
 			<div class="menu">
-				<router-link class="navigator" :to="header.menu.href[index]" v-for="(navbar,index) in header.menu.text" :key="index"><i>{{navbar}}</i></router-link>
+				<router-link to="/" class="navigator"><i>首页</i></router-link>
+				<router-link to="/solution" class="navigator" >
+                    <i>解决方案</i>
+                    <div class="navigator_level2">
+                        <router-link to="/" class="navigator">微官网</router-link>
+                        <router-link to="/" class="navigator">微商城</router-link>
+                        <router-link to="/" class="navigator">微分销</router-link>
+                        <router-link to="/" class="navigator">微会员</router-link>
+                    </div>
+                    </router-link>
+				<router-link to="/cases" class="navigator"><i>经典案例</i></router-link>
+				<router-link to="/parter" class="navigator"><i>代理加盟</i></router-link>
+				<router-link to="/product" class="navigator"><i>产品套餐</i></router-link>
+				<router-link to="/news" class="navigator"><i>行业资讯</i></router-link>
+				<router-link to="/about" class="navigator"><i>关于我们</i></router-link>
 			</div>
 			<div class="func">
 				<router-link class="navigator" :to="header.func.href[index]" v-for="(fun,index) in header.func.text" :key="index"><i>{{fun}}</i></router-link>
@@ -15,7 +29,6 @@
 	</div>
   </div>
 </template>
-
 <script>
 export default {
   data(){
@@ -24,17 +37,13 @@ export default {
 		  	  logo:{
 		  		  text:"臻善网络"
 		  	  },
-			  menu:{
-				  text:["首页","解决方案","经典案例","代理加盟","产品套餐","行业资讯","关于我们"],
-				  href:["/","/solution","/cases","/parter","/product","/news","/about"]
-			  },
 			  func:{
 				  text:["用户登录","免费注册","管理中心"],
-				  href:["#","#","#","#"]
+				  href:["/","/","/","/"]
 			  }
 		  }
 	  }
-  }
+  },
 }
 </script>
 
@@ -74,6 +83,10 @@ export default {
 	text-align: left;
 	height: 5rem;
 	line-height: 5rem;
+    color:#fff;
+}
+.navbar .container .logo a,.navbar .container .logo:hover a{
+    color:#fff;
 }
 .navbar .container .menu{
 	width: 60rem;
@@ -83,6 +96,7 @@ export default {
 	margin-left: 8.6rem;
 }
 .navbar .container .menu>.navigator{
+    display: inline-block;
 	width: auto;
 	height: 5rem;
 	line-height: 5rem;
@@ -90,6 +104,30 @@ export default {
 	float: left;
 	font-size: 14px;
 	padding: 0 1.5rem;
+    position: relative;
+}
+.navbar .container .menu>.navigator:hover .navigator_level2{
+    width: 5rem;
+    height: 25rem;
+    line-height: 5rem;
+    background: rgba(0,0,0,0.15);
+}
+.navbar .container .menu>.navigator:hover .navigator_level2 a{
+    display: inline-block;
+    width: auto;
+    color:#fff;
+    float: left;
+    font-size: 14px;
+    /* padding: 0 1.5rem; */
+    position: relative;
+}
+.navbar .container .menu>.navigator .navigator_level2{
+    position: absolute;
+    top: 5rem;
+    left: 0;
+    height: 0;
+    overflow: hidden;
+    transition:  all .5s ease-in;
 }
 .navbar .container .func{
 	width: 23.49rem;

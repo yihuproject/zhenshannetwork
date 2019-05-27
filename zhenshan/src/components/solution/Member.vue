@@ -21,47 +21,18 @@
         <div class="solution_member_func">
             <slogan :title="solutionFunc.title" :detail="solutionFunc.detail"></slogan>
             <ul class="solution_member_func_content">
-                <li v-for="item in tagArr">
-                    <div class="solution_member_func_content_container" :style="{background:item.img,backgroundSize:size}">
+                <li class="solution_member_func_content_li" v-for="item in tagArr">
+                    <div class="solution_member_func_content_container">
+                        <img :src="item.img" alt="">
                         <span>{{item.title}}</span>
                         <i>{{item.detail}}</i>
                     </div>
                 </li>
             </ul>
         </div>
-        <div class="solution_member_wise">
-            <slogan :title="solutionWise.title"></slogan>
-             <div class="solution_member_wise_content">
-                <div class="solution_member_wise_content_text">
-                    <p>
-                            对于品牌商
-                    </p>
-                    <p>
-                        打造品牌的会员卡营销，为您实现品牌的全数字化经营，
-驱动品牌智能发展。
-                    </p>
-                </div>
-                <div class="solution_member_wise_content_img">
-                    <img src="/static/images/solution_cases/why_bnt_pps.png">
-                </div>
-            </div>
-        </div>
-        <div class="solution_member_customer">
-                     <div class="solution_member_customer_content">
-                        <div class="solution_member_customer_content_img">
-                            <img src="/static/images/solution_cases/why_bnt_xfz.png">
-                        </div>
-                        <div class="solution_member_customer_content_text">
-                                                    <p>
-                                                            对于消费者
-                                                    </p>
-                                                    <p>
-                                                        服务统一，体验升级，让品牌客户更加便捷、
-                        舒适地购物，打造品牌忠诚度
-                                                    </p>
-                        </div>
-                    </div>
-                </div>
+        <slogan :title="solutionWise.title"></slogan>
+        <icontent :bgcolor="solutionWise.color" :ltitle="solutionWise.ltitle" :detail="solutionWise.content" :direction="solutionWise.direction" :img="solutionWise.img"></icontent>
+        <icontent :bgcolor="customer.color" :title="customer.title" :ltitle="customer.ltitle" :detail="customer.content" :direction="customer.direction" :img="customer.img"></icontent>
         <index-footer></index-footer>
     </div>
 </template>
@@ -70,12 +41,14 @@
     import navbar from "../public/Navbar"
     import slogan from "../public/title"
     import banner from "../public/banner"
+    import icontent from "../public/item"
     import indexFooter from "../public/IndexFooter"
     export default {
         components: {
             navbar,
             slogan,
             banner,
+            icontent,
             indexFooter
         },
         data(){
@@ -89,72 +62,86 @@
                     detail:"应用潮流工具，做最接地气的会员营销"
                 },
                  solutionWise:{
-                    title:"微会员，让门店经营更智慧"
+                    title:"微会员，让门店经营更智慧",
+                    img:"/static/images/solution_cases/why_bnt_pps.png",
+                    ltitle:"对于品牌商",
+                    color:"#fff",
+                    content:[
+                        "打造品牌的会员卡营销，为您实现品牌的全数字化经营，驱动品牌智能发展。"
+                    ],
+                    direction:"row-reverse",
                 },
                 size:"cover",
+                customer:{
+                    color:"#F5F7FA",
+                    ltitle:"对于消费者",
+                    direction:"row",
+                    img:"/static/images/solution_cases/why_bnt_xfz.png",
+                    content:[
+                        "服务统一，体验升级，让品牌客户更加便捷、 舒适地购物，打造品牌忠诚度"
+                    ]
+                },
                 tagArr:[
                     {
-                        img:"url(/static/images/solution_cases/why_icon_yhq.png) no-repeat left",
+                        img:"/static/images/solution_cases/why_icon_yhq.png",
                         title:"优惠券",
                         detail:"多种优惠券营销"
                     },
                     {
-                        img:"url(/static/images/solution_cases/why_icon_hb.png) no-repeat left",
+                        img:"/static/images/solution_cases/why_icon_hb.png",
                         title:"红包",
                         detail:"有好玩的红包营销"
                     },
                     {
-                        img:"url(/static/images/solution_cases/why_icon_yy.png) no-repeat left",
+                        img:"/static/images/solution_cases/why_icon_yy.png",
                         title:"预约管理",
                         detail:"随时预约服务"
                     },
                     {
-                        img:"url(/static/images/solution_cases/why_icon_hygl.png) no-repeat center",
+                        img:"/static/images/solution_cases/why_icon_hygl.png",
                         title:"会员积分",
                         detail:"积分兑换好礼"
                     },
                     {
-                        img:"url(/static/images/solution_cases/why_icon_fkcz.png) no-repeat center",
+                        img:"/static/images/solution_cases/why_icon_fkcz.png",
                         title:"付款充值",
                         detail:"在线付款，快速充值"
                     },
                     {
-                        img:"url(/static/images/solution_cases/why_icon_xfjl.png) no-repeat center",
+                        img:"/static/images/solution_cases/why_icon_xfjl.png",
                         title:"消费记录",
                         detail:"随时查看订单记录"
                     },
                     {
-                        img:"url(/static/images/solution_cases/why_icon_gywm.png) no-repeat center",
+                        img:"/static/images/solution_cases/why_icon_gywm.png",
                         title:"关于我们",
                         detail:"让用户更了解我们"
                     },
                     {
-                        img:"url(/static/images/solution_cases/why_icon_xwgl.png) no-repeat center",
+                        img:"/static/images/solution_cases/why_icon_xwgl.png",
                         title:"新闻管理",
                         detail:"随时查阅新闻资讯"
                     },
                     {
-                        img:"url(/static/images/solution_cases/why_icon_cpgl.png) no-repeat center",
+                        img:"/static/images/solution_cases/why_icon_cpgl.png",
                         title:"产品管理",
                         detail:"随时分类，自动上下架"
                     },
                      {
-                        img:"url(/static/images/solution_cases/why_icon_yhbd.png) no-repeat center",
+                        img:"/static/images/solution_cases/why_icon_yhbd.png",
                         title:"用户表单",
                         detail:"收集用户录入信息"
                     },
                     {
-                        img:"url(/static/images/solution_cases/why_icon_kfzx.png) no-repeat center",
+                        img:"/static/images/solution_cases/why_icon_kfzx.png",
                         title:"客服咨询",
                         detail:"找客服在线解答"
                     },
                      {
-                        img:"url(/static/images/solution_cases/why_icon_sjfx.png) no-repeat center",
+                        img:"/static/images/solution_cases/why_icon_sjfx.png",
                         title:"数据分析",
                         detail:"多场景数据采集分析"
-                    },
-                    
-                    
+                    }
                 ]
             }
         }
@@ -203,11 +190,20 @@
                align-items:center
                li
                     height: 7.3rem
-                    width: 21.83rem
+                    width: 22rem
                     .solution_member_func_content_container
+                        transition:all .3s ease-in
                         height: 7.3rem
-                        width: 21.83rem
+                        width: 22rem
                         position:relative
+                        border-radius:50px
+                        background:#fff
+                        img
+                            width: 6.67rem
+                            height: 6.67rem
+                            position:absolute
+                            top: 0.315rem
+                            left: 0.315rem
                         span
                             font-size:18px
                             color:#333
@@ -220,6 +216,9 @@
                             left: 8rem
                             font-size:14px
                             color:#999
+                li:hover
+                    .solution_member_func_content_container
+                        width: 23rem
         .solution_member_wise
             width: 100rem
             height: 55.167rem

@@ -89,7 +89,7 @@ border-width: 1px0;
 clear: both;
 height: 2px;
 margin: 5px0;
-overflow: hidden;
+/* overflow: hidden; */
 }
 ol,
 ul {

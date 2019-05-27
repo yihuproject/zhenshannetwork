@@ -81,7 +81,6 @@
         left: 0;
     }
     .stepline .stepline_center .step .step_icon i{
-        content:"";
         width: 2px;
         height: 100%;
         background: rgba(46,130,255,1);

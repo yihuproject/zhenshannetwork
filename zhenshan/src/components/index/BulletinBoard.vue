@@ -1,10 +1,10 @@
 <template>
 		<div class="bulletin_board">
 			<div class="bulletin_board_arr">
-				<a class="navigator" href=""><span>最新公告</span></a>
-				<a class="navigator" href=""><i>臻善组织架构全新升级</i></a>
-				<a class="navigator" href=""><i>臻善小程序被评为深圳大数据企业...</i></a>
-				<a class="navigator" href=""><i>臻善小程序系统全国火热招商中...</i></a>
+				<p class="navigator"><span>最新公告</span></p>
+				<p class="navigator"><i>臻善组织架构全新升级</i></p>
+				<p class="navigator"><i>臻善小程序被评为深圳大数据企业...</i></p>
+				<p class="navigator"><i>臻善小程序系统全国火热招商中...</i></p>
 			</div>
 		</div>
 </template>

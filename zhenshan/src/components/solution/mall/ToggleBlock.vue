@@ -64,7 +64,6 @@
         }
     }
 </script>
-
 <style scoped lang="stylus">
         .toggleblock
             width: 100%
@@ -75,67 +74,64 @@
                 margin: 0 auto
                 display:flex
                 flex-flow:row nowrap
-                justify-content:space-between
+                justify-content:flex-start
                 align-items:center
                 li[data-all="all"]
-                    width: 23rem
+                    width: 22.3rem
                     height: 41.83rem
                     position:relative
-                    border:1px solid rgba(235, 235, 235, 1)
-                    box-sizing:border-box
-                    transition:all .4s ease-in
                     .static_status
-                        width: 20.5rem
-                        height: 40rem
+                        width: 19.7rem
+                        height:39.23rem
                         position:absolute
                         top: 0
                         left: 0
-                        padding: 1.23rem
+                        padding: 1.3rem
                         z-index:4
+                        border:1px solid rgba(235, 235, 235, 1)
                         display:inline-block
                         .static_status_img
-                            width: 20.5rem
+                            width: 19.7rem
                             height: 10rem
                             img
                                 width: 6.83rem
                                 height: 6.83rem
                                 margin-top: 1.585rem
-                                margin-left: 6.835rem
+                                margin-left: 6.345rem
                         .static_status_title
-                            width: 20.5rem
+                            width: 19.7rem
                             height: 4rem
                             line-height: 4rem
                             text-align:center
                             color:#333
                             font-size:24px
                         .static_status_ltitle
-                            width: 20.5rem
+                            width: 19.7rem
                             height: 3rem
                             line-height: 3rem
                             text-align:center
                             color:#999
                             font-size:14px
                         .static_status_li
-                            width: 20.5rem
+                            width: 19.7rem
                             height: 23.16rem
                         .static_status_li>li
-                            width: 20.5rem
+                            width: 19.7rem
                             height: 5.79rem
                             line-height: 5.79rem
                             text-align:center
                             color:#333
                             font-size:18px
                     .active_status
-                        width: 100%
+                        width: 0
                         height: 100%
                         position:absolute
                         top: 0
                         left: 0
-                        transition:all .8s ease-in
                         z-index:3
-                        display:none
+                        overflow:hidden
                         .active_status_head
-                            width: 28.93rem
+                            width: 29.6rem
                             height: 5.96rem
                             line-height: 3rem
                             background:#FFB018
@@ -152,6 +148,8 @@
                             height: 37.11rem
                             color:#fff
                             padding:1.2rem
+                            opacity: 0
+                            transition:all .5s ease-in
                             li
                                 width: 29.7rem
                                 height: 9.27rem
@@ -190,8 +188,12 @@
                     .static_status
                         z-index:3
                         display:none
+                        border:none
                     .active_status
+                        width: 100%
                         padding:0
                         z-index:4
-                        display:inline-block
+                        transition:all .3s ease-in
+                        .active_status_li
+                            opacity: 1
 </style>

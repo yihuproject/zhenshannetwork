@@ -52,10 +52,10 @@
                     item:[
                             {
                                 static:{
-                                    img:"/static/images/solution_cases/wsc_ic_yxg.png",
-                                    title:"营销工具",
-                                    detail:"多种营销玩法，提升流量和销量",
-                                    liArr:["获客","转化率","客单价","复购率"]
+                                    img:"/static/images/solution_cases/wsc_ic_kd.png",
+                                    title:"在线开店",
+                                    detail:"强大稳定的开店系统，快速搭建商城",
+                                    liArr:["个性展示","商品管理","支付功能","高效沟通"]
                                 },
                                 active:{
                                     title:"在线开店",
@@ -95,28 +95,28 @@
                                     liArr:["获客","转化率","客单价","复购率"]
                                 },
                                 active:{
-                                    title:"在线开店",
-                                    ltitle:"强大稳定的开店系统，快速搭建商城",
+                                    title:"营销工具",
+                                    ltitle:"多种营销玩法，提升流程和销量",
                                     liArr:[
                                         {
-                                            img:"/static/images/solution_cases/wsc_ic_kd_gx.png",
-                                            title:"个性展示",
-                                            detail:"几十种页面模板组件，灵活配置"
+                                            img:"/static/images/solution_cases/wsc_ic_yxg_hk.png",
+                                            title:"获客",
+                                            detail:"拼团、秒杀等，高效获客"
                                         },
                                         {
-                                            img:"/static/images/solution_cases/wsc_ic_kd_sp.png",
-                                            title:"商品管理",
-                                            detail:"支持多种商品形态，快速铺货"
+                                            img:"/static/images/solution_cases/wsc_ic_yxg_zhl.png",
+                                            title:"转化率",
+                                            detail:"团购、返现等，转化率飙升"
                                         },
                                         {
-                                            img:"/static/images/solution_cases/wsc_ic_kd_zf.png",
-                                            title:"支付功能",
-                                            detail:"支持微信支付，安全可靠"
+                                            img:"/static/images/solution_cases/wsc_ic_yxg_kdj.png",
+                                            title:"客单价",
+                                            detail:"客单价 套餐、满减等，拉升客单"
                                         },
                                         {
-                                            img:"/static/images/solution_cases/wsc_ic_kd_gt.png",
-                                            title:"高效沟通",
-                                            detail:"智能在线客服，及时沟通交流"
+                                            img:"/static/images/solution_cases/wsc_ic_yxg_fgl.png",
+                                            title:"复购率",
+                                            detail:"周期购、会员价等，不愁复购"
                                         },
                                         
                                     ],
@@ -132,28 +132,28 @@
                                     liArr:["积分","储值","精准维护","会员互通"]
                                 },
                                 active:{
-                                    title:"在线开店",
-                                    ltitle:"强大稳定的开店系统，快速搭建商城",
+                                    title:"客户管理",
+                                    ltitle:"不怕没有回头客，精准营销拉升客量",
                                     liArr:[
                                         {
-                                            img:"/static/images/solution_cases/wsc_ic_kd_gx.png",
-                                            title:"个性展示",
-                                            detail:"几十种页面模板组件，灵活配置"
+                                            img:"/static/images/solution_cases/wsc_ic_khg_jf.png",
+                                            title:"积分",
+                                            detail:"强大的积分体制，支持积分抵现"
                                         },
                                         {
-                                            img:"/static/images/solution_cases/wsc_ic_kd_sp.png",
-                                            title:"商品管理",
-                                            detail:"支持多种商品形态，快速铺货"
+                                            img:"/static/images/solution_cases/wsc_ic_khg_cz.png",
+                                            title:"储值",
+                                            detail:"粘住老客户最佳途径 "
                                         },
                                         {
-                                            img:"/static/images/solution_cases/wsc_ic_kd_zf.png",
-                                            title:"支付功能",
-                                            detail:"支持微信支付，安全可靠"
+                                            img:"/static/images/solution_cases/wsc_ic_khg_jz.png",
+                                            title:"精准维护",
+                                            detail:"标签管理，精准分组"
                                         },
                                         {
-                                            img:"/static/images/solution_cases/wsc_ic_kd_gt.png",
-                                            title:"高效沟通",
-                                            detail:"智能在线客服，及时沟通交流"
+                                            img:"/static/images/solution_cases/wsc_ic_khg_hyh.png",
+                                            title:"会员互通",
+                                            detail:"一键授权，自动同步获取信息"
                                         },
                                         
                                     ],
@@ -169,28 +169,28 @@
                                     liArr:["会员分析","流量分析","交易分析","商品分析"]
                                 },
                                 active:{
-                                    title:"在线开店",
-                                    ltitle:"强大稳定的开店系统，快速搭建商城",
+                                    title:"数据分析",
+                                    ltitle:"全方位运营数据解析，辅助经营决策",
                                     liArr:[
                                         {
-                                            img:"/static/images/solution_cases/wsc_ic_kd_gx.png",
-                                            title:"个性展示",
-                                            detail:"几十种页面模板组件，灵活配置"
+                                            img:"/static/images/solution_cases/wsc_ic_sjfx_hy.png",
+                                            title:"会员分析",
+                                            detail:"多维度分析会员与分销商"
                                         },
                                         {
-                                            img:"/static/images/solution_cases/wsc_ic_kd_sp.png",
-                                            title:"商品管理",
-                                            detail:"支持多种商品形态，快速铺货"
+                                            img:"/static/images/solution_cases/wsc_ic_sjfx_ll.png",
+                                            title:"流量分析",
+                                            detail:"商品流量实时统计"
                                         },
                                         {
                                             img:"/static/images/solution_cases/wsc_ic_kd_zf.png",
-                                            title:"支付功能",
-                                            detail:"支持微信支付，安全可靠"
+                                            title:"交易分析",
+                                            detail:"订单管理，一目了然"
                                         },
                                         {
-                                            img:"/static/images/solution_cases/wsc_ic_kd_gt.png",
-                                            title:"高效沟通",
-                                            detail:"智能在线客服，及时沟通交流"
+                                            img:"/static/images/solution_cases/wsc_ic_sjfx_sp.png",
+                                            title:"商品分析",
+                                            detail:"销量统计，提升转换"
                                         },
                                         
                                     ],
@@ -309,6 +309,9 @@
                 flex-flow:row wrap
                 justify-content:space-between
                 align-items:center
+                .mode_item:hover
+                    .mode_items_img
+                        animation:swipe .2s ease-in 1
                 .mode_item
                     width: 23.3rem
                     height: 10rem
@@ -321,6 +324,7 @@
                     .mode_items_img
                         width: 5.5rem
                         height: 5.5rem
+                        transition:all .5s ease-in
                     .mode_items_content
                         width: 16.5rem
                         height: 6rem
@@ -333,4 +337,27 @@
                         p:last-child
                             font-size:14px
                             color:#999
+    @keyframes swipe
+        0%
+            transform:rotateZ(0deg)
+        10%
+            transform:rotateZ(20deg)
+        20%
+            transform:rotateZ(-20deg)
+        30%
+            transform:rotateZ(-30deg)
+        40%
+            transform:rotateZ(30deg)
+        50%
+            transform:rotateZ(0deg)
+        60%
+            transform:rotateZ(20deg)
+        70%
+            transform:rotateZ(-20deg)
+        80%
+            transform:rotateZ(-30deg)
+        90%
+            transform:rotateZ(30deg)
+        100%
+            transform:rotateZ(0deg)
 </style>

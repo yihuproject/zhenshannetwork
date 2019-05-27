@@ -213,9 +213,6 @@
         overflow: hidden;
         margin: 0 auto;
         margin-top: 5.083rem;
-        /* border-radius: 50%; */
-        /* clip-path:polygon(50% 0,100% 25%,100% 75%,50% 100%); */
-        /* clip-path:polygon(0 25%,50% 0,100% 25%,100% 75%,50% 100%,0 75%); */
     }
     .cases_list .cases_list_items .cases_list_item .cases_list_static  .cases_list_static_title{
         width: 21rem;

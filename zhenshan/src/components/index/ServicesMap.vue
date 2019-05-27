@@ -4,8 +4,10 @@
 		<div class="services_map_account">
 			<ul>
 				<li v-for="(item,index) in servicesMap.account">
-                     
-					<span class="number_container"><number class="number" startNum="0" :endNum="item.title" speed="15" times="100"></number><i class="number">{{item.symbol}}</i></span>
+					<span class="number_container">
+                        <span class="number">{{item.title}}</span>
+                        <i class="number">{{item.symbol}}</i>
+                    </span>
 					<i class="number_detail">{{item.detail}}</i>
 				</li>
 
@@ -19,29 +21,28 @@
 </template>
 <script>
     import slogan from "../public/title"
-    import number from "../public/number"
 	export default {
 		data(){
 			return {
 				servicesMap:{
 						account:[
                             {
-                                title:0,
+                                title:1500,
                                 symbol:"+",
                                 detail:"服务商户"
                             },
                             {
-                                title:0,
+                                title:"7x24",
                                 symbol:"h",
                                 detail:"优质服务"
                             },
                             {
-                                title:0,
+                                title:2200,
                                 symbol:"+",
                                 detail:"精品案例"
                             },
                             {
-                                title:0,
+                                title:500,
                                 symbol:"+",
                                 detail:"每日新增客户数"
                             }
@@ -50,21 +51,7 @@
             }
 		},
         components: {
-            slogan,
-            number
-        },
-        mounted(){
-            console.log(this.servicesMap.account[0].title);
-             window.addEventListener("scroll",()=>{
-                var scroll = document.documentElement.scrollTop || document.body.scrollTop || window.pageYOffset;
-                if(scroll>1800){
-                    this.servicesMap.account[0].title = 1500;
-                    this.servicesMap.account[1].title = "7x24";
-                    this.servicesMap.account[2].title = 2200;
-                    this.servicesMap.account[3].title = 500;
-                    console.log(this.servicesMap.account[1].title);
-                }
-            },true);
+            slogan
         }
 	}
 </script>

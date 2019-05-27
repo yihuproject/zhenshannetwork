@@ -2,7 +2,7 @@
 	<div class="solution">
         <slogan :title="title" :detail="detail"></slogan>
 		<div class="solution_classify">
-				<a v-for="(item,index) in solution" :key="index" class="solution_classify_navigator">
+				<router-link :to="item.link" v-for="(item,index) in solution" :key="index" class="solution_classify_navigator">
 					<div class="solution_classify_img">
 						<img :src="item.imgPath" />
 					</div>
@@ -14,7 +14,7 @@
 							<i>{{item.text.detail}}</i>
 						</div>
 					</div>
-				</a>
+				</router-link>
 		</div>
 		<div class="solution_search">
 			<div>
@@ -38,28 +38,32 @@
 								text:{
 									title:"微官网",
 									detail:"定制专属自己的互联网官网"
-								}
+								},
+                                link:"/solution"
 							},
 							{
 								imgPath:"/static/images/index/home_bnt_wsc.png",
 								text:{
 									title:"微商城",
 									detail:"打造优质用户体验，搭建生态化电商系统"
-								}
+								},
+                                link:"/solution_mall"
 							},
 							{
 								imgPath:"/static/images/index/home_bnt_wfx.png",
 								text:{
 									title:"微分期",
 									detail:"支持三级分销，二级分销，多级分销，分销+代理模式"
-								}
+								},
+                                link:"/solution_distribution"
 							},
 							{
 								imgPath:"/static/images/index/home_bnt_why.png",
 								text:{
 									title:"微会员",
 									detail:"实现精准营销，留住用户建立长期稳定关系"
-								}
+								},
+                                link:"/solution_member"
 							}
 						]
 			}

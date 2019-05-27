@@ -53,15 +53,15 @@
     }
     .product .product_link_container{
         width: 100%;
-        height: 5rem;
+        height: 3vw;
         margin: 0 auto;
         position: absolute;
-        top: 49.4rem;
+        top: 31vw;
         left: 0;
     }
     .product .product_link_container .product_btn{
         width: 100rem;
-        height: 5rem;
+        height: 3vw;
         margin: 0 auto;
         display: flex;
         flex-flow: row nowrap;
@@ -70,10 +70,10 @@
     }
     .product .product_link_container .product_btn i{
         display: inline-block;
-        width: 22.5rem;
+        width: 15vw;
         text-align: center;
-        height: 5rem;
-        line-height: 5rem;
+        height: 3vw;
+        line-height: 3vw;
         background: #fff;
         border-radius: 6px;
         font-size: 22px;
