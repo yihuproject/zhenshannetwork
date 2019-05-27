@@ -34,7 +34,7 @@
     width: 41.7rem;
     height: 23.9rem;
     margin: 0 auto;
-    padding: 5rem 0;
+    padding-top: 5rem;
 }
 .product_index .product_index_title .product_index_title_title{
     width: 41.7rem;

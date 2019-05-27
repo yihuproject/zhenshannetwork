@@ -13,7 +13,8 @@
                     </div>
                 </div>
                 <div class="cases_list_active" :style="{background:item.hoverImgBgPath}">
-                    <div class="cases_list_active_img" :style="{background:item.imgBgPath}">
+                    <div class="cases_list_active_img" :style="{background:item.hoverImgPath}">
+                        <img :src="item.hoverImgPath">
                     </div>
                     <div class="cases_list_active_title">
                         {{item.title}}
@@ -33,7 +34,6 @@
                 current:null,
                 cases:[
                     {
-                        imgPath:"/static/images/cases/al_icon_logo1.png",
                         imgBgPath:"url(/static/images/cases/logo.png) no-repeat center",
                         title:"蓝特斯邦威",
                         detail:"中国本土休闲服装品牌，为年轻消费者打造个性，流行的服饰产品",
@@ -43,7 +43,6 @@
                         hoverDetail:"扫码查看案例"
                     },
                      {
-                        imgPath:"/static/images/cases/al_icon_logo1.png",
                         imgBgPath:"url(/static/images/cases/logo.png) no-repeat center",
                         title:"蓝特斯邦威",
                         detail:"中国本土休闲服装品牌，为年轻消费者打造个性，流行的服饰产品",
@@ -53,7 +52,6 @@
                         hoverDetail:"扫码查看案例"
                     },
                     {
-                        imgPath:"/static/images/cases/al_icon_logo1.png",
                         imgBgPath:"url(/static/images/cases/logo.png) no-repeat center",
                         title:"蓝特斯邦威",
                         detail:"中国本土休闲服装品牌，为年轻消费者打造个性，流行的服饰产品",
@@ -63,7 +61,6 @@
                         hoverDetail:"扫码查看案例"
                     },
                     {
-                        imgPath:"/static/images/cases/al_icon_logo1.png",
                         imgBgPath:"url(/static/images/cases/logo.png) no-repeat center",
                         title:"蓝特斯邦威",
                         detail:"中国本土休闲服装品牌，为年轻消费者打造个性，流行的服饰产品",
@@ -73,7 +70,6 @@
                         hoverDetail:"扫码查看案例"
                     },
                     {
-                        imgPath:"/static/images/cases/al_icon_logo1.png",
                         imgBgPath:"url(/static/images/cases/logo.png) no-repeat center",
                         title:"蓝特斯邦威",
                         detail:"中国本土休闲服装品牌，为年轻消费者打造个性，流行的服饰产品",
@@ -83,7 +79,6 @@
                         hoverDetail:"扫码查看案例"
                     },
                     {
-                        imgPath:"/static/images/cases/al_icon_logo1.png",
                         imgBgPath:"url(/static/images/cases/logo.png) no-repeat center",
                         title:"蓝特斯邦威",
                         detail:"中国本土休闲服装品牌，为年轻消费者打造个性，流行的服饰产品",
@@ -93,7 +88,6 @@
                         hoverDetail:"扫码查看案例"
                     },
                     {
-                        imgPath:"/static/images/cases/al_icon_logo1.png",
                         imgBgPath:"url(/static/images/cases/logo.png) no-repeat center",
                         title:"蓝特斯邦威",
                         detail:"中国本土休闲服装品牌，为年轻消费者打造个性，流行的服饰产品",
@@ -103,7 +97,6 @@
                         hoverDetail:"扫码查看案例"
                     },
                     {
-                        imgPath:"/static/images/cases/al_icon_logo1.png",
                         imgBgPath:"url(/static/images/cases/logo.png) no-repeat center",
                         title:"蓝特斯邦威",
                         detail:"中国本土休闲服装品牌，为年轻消费者打造个性，流行的服饰产品",
@@ -113,7 +106,6 @@
                         hoverDetail:"扫码查看案例"
                     },
                     {
-                        imgPath:"/static/images/cases/al_icon_logo1.png",
                         imgBgPath:"url(/static/images/cases/logo.png) no-repeat center",
                         title:"蓝特斯邦威",
                         detail:"中国本土休闲服装品牌，为年轻消费者打造个性，流行的服饰产品",
@@ -123,7 +115,6 @@
                         hoverDetail:"扫码查看案例"
                     },
                     {
-                        imgPath:"/static/images/cases/al_icon_logo1.png",
                         imgBgPath:"url(/static/images/cases/logo.png) no-repeat center",
                         title:"蓝特斯邦威",
                         detail:"中国本土休闲服装品牌，为年轻消费者打造个性，流行的服饰产品",
@@ -133,7 +124,6 @@
                         hoverDetail:"扫码查看案例"
                     },
                     {
-                        imgPath:"/static/images/cases/al_icon_logo1.png",
                         imgBgPath:"url(/static/images/cases/logo.png) no-repeat center",
                         title:"蓝特斯邦威",
                         detail:"中国本土休闲服装品牌，为年轻消费者打造个性，流行的服饰产品",
@@ -143,7 +133,6 @@
                         hoverDetail:"扫码查看案例"
                     },
                     {
-                        imgPath:"/static/images/cases/al_icon_logo1.png",
                         imgBgPath:"url(/static/images/cases/logo.png) no-repeat center",
                         title:"蓝特斯邦威",
                         detail:"中国本土休闲服装品牌，为年轻消费者打造个性，流行的服饰产品",
@@ -242,8 +231,8 @@
         opacity: 0;
     }
     .cases_list .cases_list_items .cases_list_item .cases_list_active .cases_list_active_img{
-        width: 10.25rem;
-        height: 11.33rem;
+        width: 11.67rem;
+        height: 11.67rem;
         margin: 0 auto;
         overflow: hidden;
         margin: 0 auto;
@@ -251,6 +240,10 @@
         /* border-radius: 50%; */
         /* clip-path:polygon(50% 0,100% 25%,100% 75%,50% 100%); */
         /* clip-path:polygon(0 25%,50% 0,100% 25%,100% 75%,50% 100%,0 75%); */
+    }
+    .cases_list .cases_list_items .cases_list_item .cases_list_active .cases_list_active_img img{
+        width: 11.67rem;
+        height: 11.67rem;
     }
     .cases_list .cases_list_items .cases_list_item .cases_list_active  .cases_list_active_title{
         width: 21rem;

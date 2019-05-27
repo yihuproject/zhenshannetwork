@@ -1,7 +1,7 @@
 <template>
     <div class="solution_member">
         <navbar></navbar>
-        <banner img="url(/static/images/solution_cases/home_banner01.png) no-repeat center"></banner>
+        <banner isShow="true" text="立即体验" bLink="/product_member" color="#fff" fcolor="#7f00ff" img="url(/static/images/solution_cases/home_banner01.png) no-repeat center"></banner>
         <div class="solution_member_explain">
             <slogan :title="solutionMember.title" :detail="solutionMember.detail"></slogan>
             <div class="solution_member_explain_content">
@@ -23,9 +23,11 @@
             <ul class="solution_member_func_content">
                 <li class="solution_member_func_content_li" v-for="item in tagArr">
                     <div class="solution_member_func_content_container">
-                        <img :src="item.img" alt="">
-                        <span>{{item.title}}</span>
-                        <i>{{item.detail}}</i>
+                        <div class="solution_member_func_content_container_poi">
+                            <img :src="item.img" alt="">
+                            <span>{{item.title}}</span>
+                            <i>{{item.detail}}</i>
+                        </div>
                     </div>
                 </li>
             </ul>
@@ -190,7 +192,7 @@
                align-items:center
                li
                     height: 7.3rem
-                    width: 22rem
+                    width: 24rem
                     .solution_member_func_content_container
                         transition:all .3s ease-in
                         height: 7.3rem
@@ -198,27 +200,36 @@
                         position:relative
                         border-radius:50px
                         background:#fff
-                        img
-                            width: 6.67rem
-                            height: 6.67rem
+                        .solution_member_func_content_container_poi
+                            height: 7.3rem
+                            width: 22rem
                             position:absolute
-                            top: 0.315rem
-                            left: 0.315rem
-                        span
-                            font-size:18px
-                            color:#333
-                            position:absolute
-                            top: 1.5rem
-                            left: 8rem
-                        i
-                            position:absolute
-                            top: 4rem
-                            left: 8rem
-                            font-size:14px
-                            color:#999
+                            top: 0
+                            left: 0
+                            transition:all .3s ease-in
+                            img
+                                width: 6.67rem
+                                height: 6.67rem
+                                position:absolute
+                                top: 0.315rem
+                                left: 0.315rem
+                            span
+                                font-size:18px
+                                color:#333
+                                position:absolute
+                                top: 1.5rem
+                                left: 8rem
+                            i
+                                position:absolute
+                                top: 4rem
+                                left: 8rem
+                                font-size:14px
+                                color:#999
                 li:hover
                     .solution_member_func_content_container
-                        width: 23rem
+                        width: 24rem
+                        .solution_member_func_content_container_poi
+                            left: 1rem
         .solution_member_wise
             width: 100rem
             height: 55.167rem

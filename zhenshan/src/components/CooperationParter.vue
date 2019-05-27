@@ -1,6 +1,7 @@
 <template>
     <div class="cooperation_parter">
         <banner img="url(/static/images/parter/home_banner05.png) no-repeat center"></banner>
+        <router-link to="product_index" class="join_btn">申请成为代理商</router-link>
         <navbar></navbar>
         <div class="cooperation_parter_prospect">
             <slogan title="合作加盟我们的前景"></slogan>
@@ -121,6 +122,19 @@
     .cooperation_parter
         width: 100%
         height: auto
+        .join_btn
+            position:absolute
+            top: 23vw
+            left: 40vw
+            width: 16vw
+            height: 3.5vw
+            line-height: 3.5vw
+            text-align: center
+            display: inline-block
+            border:2px solid #fff
+            border-radius: 6px
+            font-size: 18px
+            color:#fff
         .cooperation_parter_prospect
             width: 100%
             height: 52.83rem
@@ -134,38 +148,38 @@
                     margin: 0 auto
                     width: 50rem
                     height: 33.33rem
-                .cooperation_parter_prospect_img_detail
-                    width: 50rem
-                    height: 30rem
-                    border:3px solid #eee
-                    margin-left: -14rem
-                    margin-top: 1.5rem
-                    border-radius:80px 0 0 0
-                    .cooperation_parter_prospect_img_detail_text:after
-                        content:""
-                        display:table
-                        clear:both
-                    .cooperation_parter_prospect_img_detail_text
-                        width: 41.5rem
-                        margin: 2rem 0 2rem 8.3rem
-                        span
-                            display:inline-block
-                            width: 1.5rem
-                            height: 1.5rem
-                            background:url(/static/images/parter/icon_lc_xhao.png) no-repeat center
-                            background-size:cover
-                            color:#fff
-                            text-align:center
-                            line-height: 1.5rem
-                            float: left
-                            margin-top: 0.2rem
-                        p
-                           width: 36rem
-                           display:inline-block
-                           font-size:16px
-                           float: left
-                           padding:0  1.5rem
-                           text-align:justify
+            .cooperation_parter_prospect_img_detail
+                width: 55.67rem
+                height: 31.75rem
+                background:url(/static/images/parter/kuangkuang_bnt.png) no-repeat center
+                background-size:cover
+                margin-left: -14rem
+                margin-top: 0.8rem
+                .cooperation_parter_prospect_img_detail_text:after
+                    content:""
+                    display:table
+                    clear:both
+                .cooperation_parter_prospect_img_detail_text
+                    width: 41.5rem
+                    margin: 2rem 0 2rem 8.3rem
+                    span
+                        display:inline-block
+                        width: 1.5rem
+                        height: 1.5rem
+                        background:url(/static/images/parter/icon_lc_xhao.png) no-repeat center
+                        background-size:cover
+                        color:#fff
+                        text-align:center
+                        line-height: 1.5rem
+                        float: left
+                        margin-top: 0.2rem
+                    p
+                       width: 36rem
+                       display:inline-block
+                       font-size:16px
+                       float: left
+                       padding:0  1.5rem
+                       text-align:justify
         .cooperation_parter_support
             width: 100%
             height: 63.83rem
@@ -191,7 +205,7 @@
                     position:absolute
                     bottom: 0
                     left: 0
-                    transition: width .8s ease-in
+                    transition: width .2s ease-in
                 .cooperation_parter_support_item:before
                     content:""
                     width: 0
@@ -200,7 +214,7 @@
                     position:absolute
                     bottom: 0
                     left: 0
-                    transition: width .8s ease-in
+                    transition: width .4s ease-in
                 .cooperation_parter_support_item
                     width: 31.67rem
                     height: 20.67rem
@@ -236,10 +250,10 @@
                 margin-top: 0.5rem
         .cooperation_parter_process
             width: 100%
-            height: 51.3rem
+            height: 60rem
             background:rgba(246,247,250,1)
             .cooperation_parter_process_center
                 width: 100rem
-                height: 36.03rem
+                height: 45rem
                 margin: 0 auto
 </style>

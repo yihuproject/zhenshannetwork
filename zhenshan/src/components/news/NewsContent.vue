@@ -5,8 +5,8 @@
                 <slogan title="微信推广效果太差，下面这些方法你做到没？" detail="来源：电商经验   ｜   2019-05-17 12:12:05"></slogan>
                 <detail></detail>
                 <page></page>
-                <index-footer></index-footer>
         </div>
+        <index-footer></index-footer>
     </div>
 </template>
 <script>
@@ -30,7 +30,6 @@
         },
     }
 </script>
-
 <style>
     .news_content{
         width: 100%;

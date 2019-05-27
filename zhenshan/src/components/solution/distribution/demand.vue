@@ -8,8 +8,8 @@
                     <img :src="item" alt="">
                 </swiper-slide>
                 <!-- Optional controls -->
-                <div class="swiper-button-prev"  slot="button-prev"><img src="/static/images/solution_cases/wfx_ic_jm_jtz.png" alt=""></div>
-                <div class="swiper-button-next"  slot="button-next"><img src="/static/images/solution_cases/wfx_ic_jm_jty.png" alt=""></div>
+                <div class="swiper-button-prev"  slot="button-prev" ref="prev"><img src="/static/images/solution_cases/wfx_ic_jm_jtz.png"></div>
+                <div class="swiper-button-next"  slot="button-next" ref="next"><img src="/static/images/solution_cases/wfx_ic_jm_jty.png"></div>
             </swiper>
         </div>
     </div>
@@ -20,34 +20,28 @@
     export default {
         data(){
             return {
-            swiperOption:{
-                effect : 'coverflow',
-                slidesPerView : 5,
-                centeredSlides: true,
-                coverflowEffect: {
-                    rotate: 0,
-                    stretch: 10,
-                    depth: 200,
-                    modifier: 1,
-                    slideShadows : false
-              },
-                notNextTick:true,
-                // loopedSlides:5,
-                loop:true,
-                autoplay:true,
-                autoplay:{
-                  delay:3000,
-                    stopOnLastSlide:false,
-                    disableOnInteraction:false
+                swiperOption:{
+                    effect : 'coverflow',
+                    slidesPerView : 4,//可见个数
+                    centeredSlides: true,
+                    coverflowEffect: {
+                        rotate: 0,
+                        stretch: 0,
+                        depth: 200,
+                        modifier: 2,
+                        slideShadows : false
+                  },
+                    notNextTick:true,
+                    loopedSlides:6,//循环总数
+                    loopAdditionalSlides:0,
+                    autoplay:false,
+                    grabCursor:true,
+                    initialSlide:2,//默认显示第几个索引
+                    navigation: {
+                      nextEl: '.swiper-button-next',
+                      prevEl: '.swiper-button-prev',
+                    },
                 },
-                speed:1000,
-                grabCursor:true,
-                initialSlide:10,//初始化索引
-                navigation: {
-                  nextEl: '.swiper-button-next',
-                  prevEl: '.swiper-button-prev',
-                },
-            },
                dDemand:[
                    "/static/images/solution_cases/wfx_ic_jm_1.png",
                    "/static/images/solution_cases/wfx_ic_jm_2.png",
@@ -69,9 +63,8 @@
               }
         },
         mounted(){
-            console.log('this is current swiper instance object', this.swiper);
-            this.swiper.slideTo(3, 1000, false);
-        }
+            this.swiper.slideTo(2, 1000, false);
+        },
     }
 </script>
 

@@ -4,8 +4,21 @@
         <div class="swiper_container_box" :style="{height:swiperHeight}">
             <swiper :options="swiperOption" ref="mySwiper">
                 <!-- slides -->
-                <swiper-slide v-for="(item,index) in banner.imgPath">
-                    <img :src="item" alt=""  :style="{height:swiperHeight}">
+                <swiper-slide>
+                    <img src="/static/images/index/home_banner.png"  :style="{height:swiperHeight}">
+                    <router-link to="/solution_index" class="enter enter1">免费体验</router-link>
+                </swiper-slide>
+                <swiper-slide>
+                    <img src="/static/images/index/home_banner01.png"  :style="{height:swiperHeight}">
+                    <router-link to="/solution_member" class="enter enter2">立即体验</router-link>
+                </swiper-slide>
+                <swiper-slide>
+                    <img src="/static/images/index/home_banner02.png"  :style="{height:swiperHeight}">
+                    <router-link to="/solution_distribution" class="enter enter3">立即体验</router-link>
+                </swiper-slide>
+                <swiper-slide>
+                    <img src="/static/images/index/home_banner03.png"  :style="{height:swiperHeight}">
+                    <router-link to="/solution_mall" class="enter enter4">立即体验</router-link>
                 </swiper-slide>
                 <!-- Optional controls -->
                 <div class="swiper-pagination"  slot="pagination"></div>
@@ -13,7 +26,6 @@
         </div>
 	</div>
 </template>
-
 <script>
     import navbar from "@/components/public/Navbar"
 	export default{
@@ -22,12 +34,12 @@
                 swiperOption:{
                     notNextTick:true,
                     loop:true,
-                    autoplay:true,
-                    autoplay:{
-                      delay:1000,
-                        stopOnLastSlide:false,
-                        disableOnInteraction:false
-                    },
+                    autoplay:false,
+                    // autoplay:{
+                    //   delay:1000,
+                    //     stopOnLastSlide:false,
+                    //     disableOnInteraction:false
+                    // },
                     speed:1000,
                     grabCursor:true,
                     initialSlide:0,//初始化索引
@@ -35,17 +47,7 @@
                         el:'.swiper-pagination',
                         clickable:true
                     }
-                },
-				banner:{
-					img:["1","2","3","4"],
-                    imgPath:[
-                        "/static/images/index/home_banner.png",
-                        "/static/images/index/home_banner01.png",
-                        "/static/images/index/home_banner02.png",
-                        "/static/images/index/home_banner03.png",
-                    ],
-                    currentIndex:0
-				}
+                }
 			}
 		},
         components: {
@@ -60,12 +62,10 @@
               }
         },
         mounted(){
-            console.log('this is current swiper instance object', this.swiper);
-            this.swiper.slideTo(3, 1000, false);
+            this.swiper.slideTo(3,1000, false);
         }
 	}
 </script>
-
 <style scoped>
 	.banner{
         width: 100%;
@@ -76,7 +76,22 @@
         width: 100%;
         margin: 0 auto;
     }
-    
+    .banner>>> .swiper-slide{
+        position: relative;
+    }
+    .banner>>> .swiper-slide .enter{
+        position: absolute;
+        bottom: 6.58vw;
+        left: 19.5vw;
+        width: 9vw;
+        height: 3vw;
+        line-height: 3vw;
+        text-align: center;
+        font-size: 16px;
+        display: inline-block;
+        color:#fff;
+        background: #FFBB18;
+    }
    .banner>>> .swiper_container_box .swiper-pagination .swiper-pagination-bullet{
        width: 4.167rem;
        height: 0.5rem;

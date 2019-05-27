@@ -1,19 +1,11 @@
 <template>
     <div class="index">
         <navbar></navbar>
-        <banner img="url(/static/images/solution_cases/home_banner.png) no-repeat center"></banner>
+        <banner isShow="true" text="免费体验" bLink="/product_index" color="#fff" fcolor="#3063ff" img="url(/static/images/solution_cases/home_banner.png) no-repeat center"></banner>
         <div class="index_explain">
             <slogan :title="index.title" :detail="index.detail"></slogan>
             <div class="index_explain_items">
-                <div class="index_explain_big_phone">
-                    <img :src="index.img.bigPhonePath" alt="">
-                </div>
-                <ul class="index_explain_items">
-                    <li class="index_explain_icon" v-for="(item,i) in index.img.explainItemImg">
-                        <img :src="item">
-                        <i>{{index.explainItemText[i]}}</i>
-                    </li>
-                </ul>
+                <img src="/static/images/solution_cases/icon_bnt.png">
             </div>
         </div>
         <div class="site">
@@ -79,34 +71,7 @@
                 },
                 index:{
                     title: "什么是微官网小程序？",
-                    detail:"微官网小程序主要展示企业产品，企业案例，企业文化，企业资讯等，不仅可以宣传企业形象和企业文化，还是企业营销的入口",  
-                    explainItemText:[
-                            "企业简介",
-                            "产品管理",
-                            "新闻管理",
-                            "企业案例",
-                            "客服咨询",
-                            "数据分析",
-                            "空间流量",
-                            "留言互动",
-                            "海量模板",
-                            "用户表单"
-                        ],
-                    img:{
-                        bigPhonePath:"/static/images/solution_cases/ofw_icon_bnt.png",
-                        explainItemImg:[
-                            "/static/images/solution_cases/ofw_icon_ic_js.png",
-                            "/static/images/solution_cases/ofw_icon_ic_cp.png",
-                            "/static/images/solution_cases/ofw_icon_ic_xw.png",
-                            "/static/images/solution_cases/ofw_icon_ic_al.png",
-                            "/static/images/solution_cases/ofw_icon_ic_zx.png",
-                            "/static/images/solution_cases/ofw_icon_ic_sjfx.png",
-                            "/static/images/solution_cases/ofw_icon_ic_kjll.png",
-                            "/static/images/solution_cases/ofw_icon_ic_lyhd.png",
-                            "/static/images/solution_cases/ofw_icon_ic_mb.png",
-                            "/static/images/solution_cases/ofw_icon_ic_bd.png"
-                        ]
-                    },
+                    detail:"微官网小程序主要展示企业产品，企业案例，企业文化，企业资讯等，不仅可以宣传企业形象和企业文化，还是企业营销的入口",
                     site:{
                         title: "综合建站（PC+移动+营销）",
                         detail:"企业建站的终极解决方案，智能响应、更新定制、覆盖全网终端",  
@@ -197,88 +162,14 @@
             height: 63.8rem
             margin: 0 auto
             .index_explain_items
-                width: 48.5rem
-                height: 48.5rem
+                width: 57.25rem
+                height: 40.25rem
                 position:relative
                 border-radius:50%
                 margin: 0 auto
-                .index_explain_big_phone
-                    width: 40.25rem
+                img
+                    width: 57.25rem
                     height: 40.25rem
-                    position:absolute
-                    top: 4.125rem
-                    left: 4.125rem
-                    z-index:2
-                .index_explain_items
-                    width: 48.5rem
-                    height: 48.5rem
-                    position:absolute
-                    top:0
-                    left:0
-                    border-radius:50%
-                    z-index:1
-                    li
-                        width: 4.5rem
-                        height: 4.5rem
-                        position:absolute
-                        z-index:3
-                        transition:all .5s ease-in
-                    li:nth-child(-n+6):hover
-                        transform:translateX(-50px)
-                    li:nth-child(n+6):hover
-                       transform:translateX(50px)
-                    li:first-child
-                        top: 6.167rem
-                        left: 9rem
-                    li:nth-child(2)
-                        top:13rem
-                        left:5rem
-                    li:nth-child(3)
-                        top:20.5rem
-                        left:2.4rem
-                    li:nth-child(4)
-                        top:29rem
-                        left:5rem
-                    li:nth-child(5)
-                        top:37rem
-                        left:9rem
-                    li:nth-child(6)
-                        top: 6.167rem
-                        right: 9rem
-                    li:nth-child(7)
-                        top:13rem
-                        right:5rem
-                    li:nth-child(8)
-                        top:20.5rem
-                        right:2.4rem
-                    li:nth-child(9)
-                        top:29rem
-                        right:5rem
-                    li:nth-child(10)
-                        top:37rem
-                        right:9rem
-                    li:nth-child(-n+6)
-                        i
-                            display:inline-block
-                            width: 7rem
-                            height: 4.5rem
-                            line-height: 4.5rem
-                            position:absolute
-                            top: 0rem
-                            right: 4.5rem
-                            color:#2E82FF
-                            font-size:16px
-                    li:nth-child(n+6)
-                        i
-                            display:inline-block
-                            width: 7rem
-                            height: 4.5rem
-                            line-height: 4.5rem
-                            position:absolute
-                            top: 0rem
-                            left: 6.5rem
-                            color:#2E82FF
-                            font-size:16px
         .site
             width: 100%
             height: 46.67rem

@@ -24,10 +24,10 @@
                     <i>产品套餐<b class="navigator_arrow">△</b></i>
                     <div class="navigator_level2">
                         <div class="navigator_level2_center">
-                            <router-link to="/" class="navigator">微官网版</router-link>
-                            <router-link to="/" class="navigator">微会员版</router-link>
-                            <router-link to="/" class="navigator">微分销版</router-link>
-                            <router-link to="/" class="navigator">微商城版</router-link>
+                            <router-link to="/product_index" class="navigator">微官网版</router-link>
+                            <router-link to="/product_member" class="navigator">微会员版</router-link>
+                            <router-link to="/product_distribution" class="navigator">微分销版</router-link>
+                            <router-link to="/product_mall" class="navigator">微商城版</router-link>
                         </div>
                     </div>
                     </router-link>
@@ -125,7 +125,7 @@ export default {
     line-height: 2rem;
     position: absolute;
     right: -1.2rem;
-    bottom: -0.2rem;
+    bottom: -0.3rem;
     transition: all .4s ease-in;
     font-size: 18px;
 }
@@ -150,7 +150,7 @@ export default {
     line-height: 5rem;
 }
 .navbar .container .menu>.navigator:hover .navigator_level2 .navigator_level2_center{
-    border-top:1px solid #fff;
+    border-top:1px solid #eee;
 }
 .navbar .container .menu>.navigator .navigator_level2 .navigator_level2_center{
     width:100rem;

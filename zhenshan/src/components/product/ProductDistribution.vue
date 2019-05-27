@@ -33,9 +33,9 @@
 }
 .product_distribution .product_distribution_title{
     width: 41.7rem;
-    height: 23.9rem;
+    height: 28.9rem;
     margin: 0 auto;
-    padding: 5rem 0;
+    padding: 5rem 0 3rem 0;
 }
 .product_distribution .product_distribution_title .product_distribution_title_title{
     width: 41.7rem;

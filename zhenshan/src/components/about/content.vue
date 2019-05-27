@@ -1,9 +1,9 @@
 <template>
-    <div class="content">
+    <div class="about_content">
         <slogan title="我们是谁"></slogan>
-        <div class="content_all">
+        <div class="about_content_all">
             <p>
-                深圳市前海一户文化科技有限公司正因一颗敬畏互联网的心，让我们都以认真、负责和尊重的态度去对待每一个客户。 源于对互联网的狂热，因此让我们一次次的直面挑战，致使求知、探索和创新成为公司每位成员一种内在的本能。 我们透过作品去与每一个人沟通，通过项目成果告诉人们我们的执着与信念。当然，成就一个好的案例， 离不开团队成员之间的信任与情感，有了这些内因的推动，才让公司始终为了美好去设计、为了信念去开发。 坚持小而美的团队，使得我们团队协作的更紧密、更有热情的去创造。
+               深圳市富方科技有限公司正因一颗敬畏互联网的心，让我们都以认真、负责和尊重的态度去对待每一个客户。 源于对互联网的狂热，因此让我们一次次的直面挑战，致使求知、探索和创新成为公司每位成员一种内在的本能。 我们透过作品去与每一个人沟通，通过项目成果告诉人们我们的执着与信念。当然，成就一个好的案例， 离不开团队成员之间的信任与情感，有了这些内因的推动，才让公司始终为了美好去设计、为了信念去开发。 坚持小而美的团队，使得我们团队协作的更紧密、更有热情的去创造。
             </p>
             <img src="/static/images/about/gywm_bnt.png">
             <p>
@@ -12,7 +12,6 @@
         </div>
     </div>
 </template>
-
 <script>
     import slogan from "../public/title"
     export default{
@@ -26,28 +25,32 @@
         },
     }
 </script>
-
 <style>
-    .content{
+    .about_content{
         width: 100%;
         height: auto;
     }
-    .content .content_all{
+    .about_content .about_content_all{
         width: 100rem;
         height: auto;
         margin: 0 auto;
+        border:none;
     }
-    .content .content_all p{
-        padding: 2.5rem 8.3rem;
+    .about_content .about_content_all p{
+        padding: 1rem 2rem;
         font-size: 16px;
         color:#333;
+        line-height: 3rem;
+        text-indent: 3rem;
+        text-align: justify;
     }
-    .content .content_all p:first-child{
+    .about_content .about_content_all p:first-child{
         padding-top:0;
     }
-    .content .content_all img{
-        width: 100rem;
+    .about_content .about_content_all img{
+        width: 80rem;
         height: auto;
+        margin-left: 10rem;
     }
     
     

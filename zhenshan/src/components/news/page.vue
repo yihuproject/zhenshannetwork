@@ -6,7 +6,6 @@
         </div>
     </div>
 </template>
-
 <script>
     export default{
         data(){
@@ -16,7 +15,6 @@
         }
     }
 </script>
-
 <style>
     .page{
         width: 100%;
@@ -32,8 +30,10 @@
     }
     .page .page_content span{
         color:#333;
+        font-size:14px;
     }
     .page .page_content span a{
         color:#2E82FF;
+        font-size:14px;
     }
 </style>

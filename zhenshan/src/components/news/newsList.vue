@@ -1,7 +1,7 @@
 <template>
     <div class="news_list">
         <div class="news_list_items">
-            <div class="news_list_items_item" v-for="item in newsList">
+            <router-link :to="item.link" tag="div" class="news_list_items_item" v-for="item in newsList">
                 <div class="news_list_items_item_img">
                     <img :src="item.img">
                 </div>
@@ -17,7 +17,7 @@
                         </i>
                     </p>
                 </div>
-            </div>
+            </router-link>
         </div>
     </div>
 </template>
@@ -32,57 +32,90 @@
                         title:"门店线上线下库存同步，助力商家营收利润双升！",
                         detail:"我这边不但做线上商城配送，还有线下门店的管理，货都是由门店出的，有时候呢!线上商城爆单了，订单量严重超出线下门店的库存了，这个时候只能联系客户退单或者修改了，很严重的影响到客户的体验",
                         time:"2019-05-17",
-                        location:"广东深圳"
+                        location:"广东深圳",
+                        link:"/news_detail"
                     },
                     {
                         img:"/static/images/news/news_tp01.png",
                         title:"门店线上线下库存同步，助力商家营收利润双升！",
                         detail:"我这边不但做线上商城配送，还有线下门店的管理，货都是由门店出的，有时候呢!线上商城爆单了，订单量严重超出线下门店的库存了，这个时候只能联系客户退单或者修改了，很严重的影响到客户的体验",
                         time:"2019-05-17",
-                        location:"广东深圳"
+                        location:"广东深圳",
+                        link:"/news_detail"
                     },
                     {
                         img:"/static/images/news/news_tp01.png",
                         title:"门店线上线下库存同步，助力商家营收利润双升！",
                         detail:"我这边不但做线上商城配送，还有线下门店的管理，货都是由门店出的，有时候呢!线上商城爆单了，订单量严重超出线下门店的库存了，这个时候只能联系客户退单或者修改了，很严重的影响到客户的体验",
                         time:"2019-05-17",
-                        location:"广东深圳"
+                        location:"广东深圳",
+                        link:"/news_detail"
                     },
                     {
                         img:"/static/images/news/news_tp01.png",
                         title:"门店线上线下库存同步，助力商家营收利润双升！",
                         detail:"我这边不但做线上商城配送，还有线下门店的管理，货都是由门店出的，有时候呢!线上商城爆单了，订单量严重超出线下门店的库存了，这个时候只能联系客户退单或者修改了，很严重的影响到客户的体验",
                         time:"2019-05-17",
-                        location:"广东深圳"
+                        location:"广东深圳",
+                        link:"/news_detail"
                     },
                     {
                         img:"/static/images/news/news_tp01.png",
                         title:"门店线上线下库存同步，助力商家营收利润双升！",
                         detail:"我这边不但做线上商城配送，还有线下门店的管理，货都是由门店出的，有时候呢!线上商城爆单了，订单量严重超出线下门店的库存了，这个时候只能联系客户退单或者修改了，很严重的影响到客户的体验",
                         time:"2019-05-17",
-                        location:"广东深圳"
+                        location:"广东深圳",
+                        link:"/news_detail"
                     },
                     {
                         img:"/static/images/news/news_tp01.png",
                         title:"门店线上线下库存同步，助力商家营收利润双升！",
                         detail:"我这边不但做线上商城配送，还有线下门店的管理，货都是由门店出的，有时候呢!线上商城爆单了，订单量严重超出线下门店的库存了，这个时候只能联系客户退单或者修改了，很严重的影响到客户的体验",
                         time:"2019-05-17",
-                        location:"广东深圳"
+                        location:"广东深圳",
+                        link:"/news_detail"
                     },
                     {
                         img:"/static/images/news/news_tp01.png",
                         title:"门店线上线下库存同步，助力商家营收利润双升！",
                         detail:"我这边不但做线上商城配送，还有线下门店的管理，货都是由门店出的，有时候呢!线上商城爆单了，订单量严重超出线下门店的库存了，这个时候只能联系客户退单或者修改了，很严重的影响到客户的体验",
                         time:"2019-05-17",
-                        location:"广东深圳"
+                        location:"广东深圳",
+                        link:"/news_detail"
                     },
                     {
                         img:"/static/images/news/news_tp01.png",
                         title:"门店线上线下库存同步，助力商家营收利润双升！",
                         detail:"我这边不但做线上商城配送，还有线下门店的管理，货都是由门店出的，有时候呢!线上商城爆单了，订单量严重超出线下门店的库存了，这个时候只能联系客户退单或者修改了，很严重的影响到客户的体验",
                         time:"2019-05-17",
-                        location:"广东深圳"
+                        location:"广东深圳",
+                        link:"/news_detail"
+                    },
+                    {
+                        img:"/static/images/news/news_tp01.png",
+                        title:"门店线上线下库存同步，助力商家营收利润双升！",
+                        detail:"我这边不但做线上商城配送，还有线下门店的管理，货都是由门店出的，有时候呢!线上商城爆单了，订单量严重超出线下门店的库存了，这个时候只能联系客户退单或者修改了，很严重的影响到客户的体验",
+                        time:"2019-05-17",
+                        location:"广东深圳",
+                        link:"/news_detail"
+                    },
+                    {
+                        img:"/static/images/news/news_tp01.png",
+                        title:"门店线上线下库存同步，助力商家营收利润双升！",
+                        detail:"我这边不但做线上商城配送，还有线下门店的管理，货都是由门店出的，有时候呢!线上商城爆单了，订单量严重超出线下门店的库存了，这个时候只能联系客户退单或者修改了，很严重的影响到客户的体验",
+                        time:"2019-05-17",
+                        location:"广东深圳",
+                        link:"/news_detail"
+                    },
+                    {
+                        img:"/static/images/news/news_tp01.png",
+                        title:"门店线上线下库存同步，助力商家营收利润双升！",
+                        detail:"我这边不但做线上商城配送，还有线下门店的管理，货都是由门店出的，有时候呢!线上商城爆单了，订单量严重超出线下门店的库存了，这个时候只能联系客户退单或者修改了，很严重的影响到客户的体验",
+                        time:"2019-05-17",
+                        location:"广东深圳",
+                        link:"/news_detail"
                     }
+                    
                 ]
             }
         }

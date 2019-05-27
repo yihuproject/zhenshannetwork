@@ -2,9 +2,10 @@
     <div class="stepline">
         <div class="stepline_center">
             <div class="step" v-for="(item,index) in obj">
-                <div class="step_icon"  :style="{color:IconColor,borderColor:IconColor}">{{index+1}}
-                    <i class="step_line"></i>
+                <div class="step_icon"  :style="{color:IconColor,borderColor:IconColor}">
+                    {{index+1}}
                 </div>
+                <i class="step_line" v-show="index<=4"></i>
                 <div class="step_content">
                     <p class="step_content_title"  :style="{color:TitleColor}">
                         {{item.title}}
@@ -45,7 +46,7 @@
                         title:"开展业务",
                         detail:"提供宣传使用的物料，代理商置换成自己的公司信息和logo开展自身小程序业务"
                     }
-                ]
+                ],
             }
         }
     }
@@ -63,7 +64,7 @@
     }
     .stepline .stepline_center .step{
         width: 88rem;
-        min-height: 5.83rem;
+        min-height: 8rem;
         position: relative;
     }
     .stepline .stepline_center .step .step_icon{
@@ -77,42 +78,49 @@
         font-size: 18px;
         float: left;
         position: absolute;
-        top: 20%;
+        top: 2rem;
         left: 0;
+        z-index: 5;
+        background:rgba(246,247,250,1);
     }
-    .stepline .stepline_center .step .step_icon i{
+    .stepline .stepline_center .step .step_line{
         width: 2px;
         height: 100%;
         background: rgba(46,130,255,1);
         position: absolute;
-        top: 2.915rem;
-        left: 1.3rem;
+        top: 2rem;
+        left: 1.4rem;
+        z-index: 0;
+    }
+    .stepline .stepline_center .step .step_line:last-child{
+        background: rgba(0,0,0,1);
     }
     .stepline .stepline_center .step .step_content{
         width: 80.3rem;
-        min-height: 5rem;
+        min-height: 7rem;
         background:#fff;
         float: left;
         position: absolute;
         top: 0;
         left: 5rem;
         padding-left: 2rem;
-        line-height: 2.5rem;
         position: relative;
     }
     .stepline .stepline_center .step .step_content:before{
         content: "";
         position: absolute;
-        top: 1.5rem;
+        top: 2.5rem;
         left: -2rem;
         border:1rem solid transparent;
         border-right-color:#fff;
     }
     .stepline .stepline_center .step .step_content .step_content_title{
         font-size: 18px;
+        line-height: 3.5rem;
     }
     .stepline .stepline_center .step .step_content .step_content_detail{
         font-size: 14px;
+        line-height: 2.5rem;
     }
     
 </style>

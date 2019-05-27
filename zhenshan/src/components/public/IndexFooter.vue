@@ -4,11 +4,11 @@
 			<ul>
 				<li><i>微信小程序代理</i></li>
 				<li><i>小程序代理</i></li>
-				<li><i>解决方案</i></li>
-				<li><i>经典案例</i></li>
-				<li><i>产品套餐</i></li>
-				<li><i>关于我们</i></li>
-				<li><i>联系我们</i></li>
+				<li><i><router-link to="/solution_index">解决方案</router-link></i></li>
+				<li><i><router-link to="/cases">经典案例</router-link></i></li>
+				<li><i><router-link to="/product_index">产品套餐</router-link></i></li>
+				<li><i><router-link to="/about">关于我们</router-link></i></li>
+				<li><i><router-link to="/about">联系我们</router-link></i></li>
 			</ul>
 			<div class="index_footer_copyright">
 				<i>copyright &copy; 2019 www.zhenshanyk.com 深圳市臻善科技有限公司 粤ICP备19207238号</i>
@@ -58,6 +58,10 @@
 		font-size: 18px;
 		color:#fff;
 	}
+    .index_footer .index_footer_blogroll ul>li i a{
+        font-size: 18px;
+        color:#fff;
+    }
 	.index_footer .index_footer_blogroll .index_footer_copyright{
 		width: 100rem;
 		height: 9rem;

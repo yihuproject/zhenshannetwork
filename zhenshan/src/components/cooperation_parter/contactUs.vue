@@ -4,11 +4,11 @@
         <div class="contactus_center">
             <div class="contactus_center_form">
                 <div class="contactus_center_form_np">
-                    <input type="text" placeholder="您的姓名">
-                    <input type="text" placeholder="您的联系电话">
+                    <input type="text" maxlength="6" placeholder="您的姓名">
+                    <input type="text" v-model="value"  @blur="regNum" maxlength="11" placeholder="您的联系电话">
                 </div>
                 <div class="contactus_center_form_describe">
-                    <textarea placeholder="描述您的需求，准确详细的需求可以得到更快的回复哦"></textarea>
+                    <textarea  maxlength="150" placeholder="描述您的需求，准确详细的需求可以得到更快的回复哦"></textarea>
                 </div>
                 <div class="contactus_center_form_button">
                     <span>立即提交</span>
@@ -22,7 +22,12 @@
     export default {
         data(){
             return {
-              
+              value:""
+            }
+        },
+        methods: {
+            regNum() {
+                this.value = this.value.replace(/[^\d]/g,"");
             }
         },
         components: {
