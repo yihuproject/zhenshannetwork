@@ -8,17 +8,29 @@
 			<div class="menu">
 				<router-link to="/" class="navigator"><i>首页</i></router-link>
 				<router-link to="/solution" class="navigator" >
-                    <i>解决方案</i>
+                    <i>解决方案<b class="navigator_arrow">△</b></i>
                     <div class="navigator_level2">
-                        <router-link to="/" class="navigator">微官网</router-link>
-                        <router-link to="/" class="navigator">微商城</router-link>
-                        <router-link to="/" class="navigator">微分销</router-link>
-                        <router-link to="/" class="navigator">微会员</router-link>
+                        <div class="navigator_level2_center">
+                            <router-link to="/solution" class="navigator">微官网</router-link>
+                            <router-link to="/solution_mall" class="navigator">微商城</router-link>
+                            <router-link to="/solution_distribution" class="navigator">微分销</router-link>
+                            <router-link to="/solution_member" class="navigator">微会员</router-link>
+                        </div>
                     </div>
                     </router-link>
 				<router-link to="/cases" class="navigator"><i>经典案例</i></router-link>
 				<router-link to="/parter" class="navigator"><i>代理加盟</i></router-link>
-				<router-link to="/product" class="navigator"><i>产品套餐</i></router-link>
+				<router-link to="/product_index" class="navigator">
+                    <i>产品套餐<b class="navigator_arrow">△</b></i>
+                    <div class="navigator_level2">
+                        <div class="navigator_level2_center">
+                            <router-link to="/" class="navigator">微官网版</router-link>
+                            <router-link to="/" class="navigator">微会员版</router-link>
+                            <router-link to="/" class="navigator">微分销版</router-link>
+                            <router-link to="/" class="navigator">微商城版</router-link>
+                        </div>
+                    </div>
+                    </router-link>
 				<router-link to="/news" class="navigator"><i>行业资讯</i></router-link>
 				<router-link to="/about" class="navigator"><i>关于我们</i></router-link>
 			</div>
@@ -104,30 +116,58 @@ export default {
 	float: left;
 	font-size: 14px;
 	padding: 0 1.5rem;
+}
+.navbar .container .menu>.navigator i{
     position: relative;
 }
-.navbar .container .menu>.navigator:hover .navigator_level2{
-    width: 5rem;
-    height: 25rem;
-    line-height: 5rem;
-    background: rgba(0,0,0,0.15);
+.navbar .container .menu>.navigator i>.navigator_arrow{
+    height: 2rem;
+    line-height: 2rem;
+    position: absolute;
+    right: -1.2rem;
+    bottom: -0.2rem;
+    transition: all .4s ease-in;
+    font-size: 18px;
 }
-.navbar .container .menu>.navigator:hover .navigator_level2 a{
-    display: inline-block;
-    width: auto;
-    color:#fff;
-    float: left;
-    font-size: 14px;
-    /* padding: 0 1.5rem; */
-    position: relative;
+.navbar .container .menu>.navigator:hover i>.navigator_arrow{
+    font-style: normal;
+    transform:rotateZ(180deg);
 }
 .navbar .container .menu>.navigator .navigator_level2{
+    width: 100%;
+    min-height:0;
+    background: rgba(0,0,0,0.15);
     position: absolute;
     top: 5rem;
     left: 0;
     height: 0;
     overflow: hidden;
-    transition:  all .5s ease-in;
+    transition:  all .3s ease-in;
+}
+.navbar .container .menu>.navigator:hover .navigator_level2{
+    width: 100%;
+    min-height:5rem;
+    line-height: 5rem;
+}
+.navbar .container .menu>.navigator:hover .navigator_level2 .navigator_level2_center{
+    border-top:1px solid #fff;
+}
+.navbar .container .menu>.navigator .navigator_level2 .navigator_level2_center{
+    width:100rem;
+    margin: 0 auto;
+    height: 25rem;
+    line-height: 5rem;
+}
+.navbar .container .menu>.navigator .navigator_level2 .navigator_level2_center a:hover{
+    text-decoration: underline;
+}
+.navbar .container .menu>.navigator .navigator_level2 .navigator_level2_center a{
+    display: inline-block;
+    width: auto;
+    float: left;
+    margin-right: 1.5rem;
+    color:#fff;
+    font-size: 14px;
 }
 .navbar .container .func{
 	width: 23.49rem;
