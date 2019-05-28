@@ -16,9 +16,9 @@ export default {
 	height: auto;
 	font-family: "microsoft yahei";
 }
-/* @media screen and (min-width: 600px) {
+/* @media screen and (max-width: 1200px) {
     html {
-        font-size: calc(112.5% + 4 * (100vw - 600px) / 400);
+        font-size: calc(112.5% + 4 * (100vw - 1200px) / 1200);
     }
 }
 @media screen and (min-width: 1000px) {

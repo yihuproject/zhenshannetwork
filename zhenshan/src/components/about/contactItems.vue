@@ -76,6 +76,9 @@
 		background:#fff;
 		transition: all 1s;
 	}
+    .transition_block .demand_classify .demand_classify_navigator:hover{
+        transform: scale(1.1);
+    }
 	.transition_block .demand_classify .demand_classify_navigator .demand_classify_img{
 		width:22.5rem;
 		height: 6.66rem;

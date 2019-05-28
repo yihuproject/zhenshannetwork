@@ -32,27 +32,27 @@
     height: auto;
 }
 .product_distribution .product_distribution_title{
-    width: 41.7rem;
-    height: 28.9rem;
+    width: 48.7rem;
+    height: 25.9rem;
     margin: 0 auto;
     padding: 5rem 0 3rem 0;
 }
 .product_distribution .product_distribution_title .product_distribution_title_title{
-    width: 41.7rem;
+    width: 48.7rem;
     line-height: 5rem;
     text-align: center;
     color:#333;
     font-size:32px;
 }
 .product_distribution .product_distribution_title .product_distribution_title_detail{
-    width: 41.7rem;
+    width: 48.7rem;
     line-height: 2.5rem;
     text-align: center;
     color:#333;
     font-size:18px;
 }
 .product_distribution .product_distribution_title .product_distribution_title_price{
-    width: 41.7rem;
+    width: 48.7rem;
     line-height: 8rem;
     text-align: center;
     color:#ff0000;
@@ -67,7 +67,7 @@
     background:rgba(46,130,255,1);
     font-size:18px;
     border-radius: 6px;
-    margin-left: 13.35rem;
+    margin-left: 16.85rem;
 }
 .product_distribution .product_distribution_content{
     width: 100rem;

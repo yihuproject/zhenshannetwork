@@ -1,7 +1,7 @@
 <template>
     <div class="mall">
         <navbar></navbar>
-        <banner isShow="true" text="立即体验" bLink="/product_mall" color="#fff" fcolor="#FF5B41" :img="bannerImg"></banner>
+        <banner  objHeight="660" isShow="true" text="立即体验" bLink="/product_mall" color="#fff" fcolor="#FF5B41" :img="bannerImg"></banner>
         <toggle-block :obj="system"></toggle-block>
         <div class="mode">
             <slogan :title="mode.title" :detail="mode.detail"></slogan>

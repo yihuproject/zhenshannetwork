@@ -70,6 +70,10 @@
     .advanages .advantages_items li{
        width: auto;
        height: 15rem;
+       transition: all .4s ease-in;
+   }
+   .advanages .advantages_items li:hover{
+       transform: scale(1.1);
    }
     .advanages .advantages_items li>.advantages_icon{
        width: 10rem;

@@ -67,6 +67,9 @@
         min-height: 8rem;
         position: relative;
     }
+    .stepline .stepline_center .step:last-child>.step_line{
+        background: none;
+    }
     .stepline .stepline_center .step .step_icon{
         width: 2.915rem;
         height: 2.915rem;

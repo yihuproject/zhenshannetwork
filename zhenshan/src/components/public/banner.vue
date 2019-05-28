@@ -8,6 +8,10 @@
 <script>
 	export default{
         props: {
+            objHeight: {
+                type: String,
+                default: "600"
+            },
             img: {
                 type: String,
                 default: ""
@@ -40,7 +44,7 @@
 		},
         computed: {
             swiperHeight() {
-                return `${100*660/1920}vw`;
+                return `${100*this.objHeight/1920}vw`;
             }
         }
 	}

@@ -1,7 +1,7 @@
 <template>
     <div class="index">
         <navbar></navbar>
-        <banner isShow="true" text="免费体验" bLink="/product_index" color="#fff" fcolor="#3063ff" img="url(/static/images/solution_cases/home_banner.png) no-repeat center"></banner>
+        <banner objHeight="660" isShow="true" text="免费体验" bLink="/product_index" color="#fff" fcolor="#3063ff" img="url(/static/images/solution_cases/home_banner.png) no-repeat center"></banner>
         <div class="index_explain">
             <slogan :title="index.title" :detail="index.detail"></slogan>
             <div class="index_explain_items">
@@ -24,16 +24,18 @@
         </div>
         <slogan title="精美案例微站风格" detail="自由灵活设计，微站风格，为多个行业量身定制"></slogan>
         <div class="cases" :style="{height:swiperHeight}">
-                <swiper :options="swiperOption" ref="mySwiper"  :style="{height:swiperHeight}">
-                    <!-- slides -->
-                    <swiper-slide v-for="(imgArr,index) in index.cases.imgPath">
-                        <div class="el_item_list" style="margin: 0 auto;display: flex;flex-flow: row nowrap;justify-content: space-around;" :style="{marginTop:centerHeight}">
-                            <img :src="img.img" alt="" v-for="(img,index) in imgArr"  :style="{height:swiperImgHeight}">
-                        </div>
-                    </swiper-slide>
-                    <!-- Optional controls -->
-                    <div class="swiper-pagination"  slot="pagination"></div>
-                </swiper>
+                <div class="cases_center">
+                    <swiper :options="swiperOption" ref="mySwiper"  :style="{height:swiperHeight}">
+                        <!-- slides -->
+                        <swiper-slide v-for="(imgArr,index) in index.cases.imgPath">
+                            <div class="el_item_list" style="margin: 0 auto;display: flex;flex-flow: row nowrap;justify-content: space-around;" :style="{marginTop:centerHeight}">
+                                <img :src="img.img" alt="" v-for="(img,index) in imgArr"  :style="{height:swiperImgHeight}">
+                            </div>
+                        </swiper-slide>
+                        <!-- Optional controls -->
+                        <div class="swiper-pagination"  slot="pagination"></div>
+                    </swiper>
+                </div>
         </div>
         <index-footer style="margin-top:4rem"></index-footer>
     </div>
@@ -206,6 +208,11 @@
                             margin-top: 1rem
                             font-size:14px
                             color:#666
+        .cases
+            width: 100%
+            .cases_center
+                width: 100rem
+                margin: 0 auto
     @keyframes phone
         from
             transform: rotateX(-20deg)

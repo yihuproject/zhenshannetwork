@@ -163,11 +163,10 @@
 					border:1px solid #E5E5E5
 					box-sizing: border-box
 					float: left
-					padding: 1rem
-					font-size: 18px
-					font-weight: 300
 				.solution_search_input::-webkit-input-placeholder
 					color: #999
+					font-size: 18px
+					padding: 1rem
 				.solution_search_button
 					display: inline-block
 					width: 15rem

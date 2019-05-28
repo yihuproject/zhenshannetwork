@@ -41,13 +41,6 @@
         <div class="cooperation_parter_process">
             <slogan title="加盟代理流程"></slogan>
             <div class="cooperation_parter_process_center">
-                <!-- <el-steps direction="vertical" :active="5" space="50">
-                    <el-step title="加盟签证" description="签约代理合同（各持一份），并财务汇款"></el-step>
-                    <el-step title="提供清单" description="根据提供的资料清单，贵公司提供相关资料信息，并把贵公司域名解析到我们的服务器"></el-step>
-                    <el-step title="配置系统" description="后台人员配置代理商系统，并设置折扣和充值预付款"></el-step>
-                    <el-step title="提供材料" description="提供销售话术和销售使用的PPT给代理商"></el-step>
-                    <el-step title="开展业务" description="提供宣传使用的物料，代理商置换成自己的公司信息和logo开展自身小程序业务"></el-step>
-              </el-steps> -->
               <process></process>
             </div>
         </div>
@@ -153,15 +146,19 @@
                 height: 31.75rem
                 background:url(/static/images/parter/kuangkuang_bnt.png) no-repeat center
                 background-size:cover
-                margin-left: -14rem
+                margin-left: -10rem
                 margin-top: 0.8rem
                 .cooperation_parter_prospect_img_detail_text:after
                     content:""
                     display:table
                     clear:both
+                .cooperation_parter_prospect_img_detail_text:first-child
+                    margin: 2rem 0 0rem 8.3rem
+                .cooperation_parter_prospect_img_detail_text:last-child
+                    margin: 5rem 0 0rem 8.3rem
                 .cooperation_parter_prospect_img_detail_text
                     width: 41.5rem
-                    margin: 2rem 0 2rem 8.3rem
+                    margin: 5rem 0 0 8.3rem
                     span
                         display:inline-block
                         width: 1.5rem

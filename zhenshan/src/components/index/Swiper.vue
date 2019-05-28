@@ -62,7 +62,7 @@
               }
         },
         mounted(){
-            this.swiper.slideTo(3,1000, false);
+            this.swiper.slideTo(0,1000, false);
         }
 	}
 </script>

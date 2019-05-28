@@ -74,17 +74,21 @@
         height: 78rem;
     }
     .d_demand .d_demand_swiper{
-        width: 100%;
+        width: 100rem;
         height: 74.7rem;
         margin: 2rem auto;
         position: relative;
     }
     .d_demand>>> .d_demand_swiper .swiper-button-prev{
         position: absolute;
-        left: 10rem;
+        left: 0rem;
+        width:3.83rem;
+        height:3.83rem;
     }
         .d_demand>>> .d_demand_swiper .swiper-button-next{
         position: absolute;
-        right: 10rem;
+        right: 0rem;
+        width:3.83rem;
+        height:3.83rem;
     }
 </style>

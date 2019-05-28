@@ -1,7 +1,7 @@
 <template>
     <div class="solution_member">
         <navbar></navbar>
-        <banner isShow="true" text="立即体验" bLink="/product_member" color="#fff" fcolor="#7f00ff" img="url(/static/images/solution_cases/home_banner01.png) no-repeat center"></banner>
+        <banner objHeight="660" isShow="true" text="立即体验" bLink="/product_member" color="#fff" fcolor="#7f00ff" img="url(/static/images/solution_cases/home_banner01.png) no-repeat center"></banner>
         <div class="solution_member_explain">
             <slogan :title="solutionMember.title" :detail="solutionMember.detail"></slogan>
             <div class="solution_member_explain_content">
@@ -192,9 +192,9 @@
                align-items:center
                li
                     height: 7.3rem
-                    width: 24rem
+                    width: 22rem
+                    transition:all .3s ease-in
                     .solution_member_func_content_container
-                        transition:all .3s ease-in
                         height: 7.3rem
                         width: 22rem
                         position:relative
@@ -206,7 +206,6 @@
                             position:absolute
                             top: 0
                             left: 0
-                            transition:all .3s ease-in
                             img
                                 width: 6.67rem
                                 height: 6.67rem
@@ -226,10 +225,7 @@
                                 font-size:14px
                                 color:#999
                 li:hover
-                    .solution_member_func_content_container
-                        width: 24rem
-                        .solution_member_func_content_container_poi
-                            left: 1rem
+                    transform:scale(1.1)
         .solution_member_wise
             width: 100rem
             height: 55.167rem

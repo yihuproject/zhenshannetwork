@@ -189,6 +189,7 @@
 	}
 	.demand .demand_classify .demand_classify_navigator .demand_classify_text .demand_classify_text_detail .more>.mo_li{
 		width: 21.75rem;
+        line-height: 2rem;
 		text-align: center;
 		color:#fff;
         display: none;

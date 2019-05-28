@@ -1,7 +1,7 @@
 <template>
     <div class="distribution">
         <navbar></navbar>
-        <banner  isShow="true" text="立即体验" bLink="/product_distribution" color="#fff" fcolor="#FF5E62" img="url(/static/images/solution_cases/home_banner02.png) no-repeat center"></banner>
+        <banner  objHeight="660"  isShow="true" text="立即体验" bLink="/product_distribution" color="#fff" fcolor="#FF5E62" img="url(/static/images/solution_cases/home_banner02.png) no-repeat center"></banner>
         <transition-block></transition-block>
         <func></func>
         <advantages></advantages>
