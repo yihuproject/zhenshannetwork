@@ -1,5 +1,5 @@
 <template>
-	<div class="register">
+	<div class="register" style="background: url(/static/images/index/home_bnt_dibu.png) no-repeat center">
 		<div class="register_slogan">
 			<i>我们一起挖掘小程序千亿市场，抢占微信海量用户红利</i>
 		</div>
@@ -8,22 +8,12 @@
 		</div>
 	</div>
 </template>
-
 <script>
-	export default{
-		data(){
-			return {
-				
-			}
-		}
-	}
 </script>
-
 <style scoped>
 	.register{
 		width: 100%;
 		height: 25rem;
-		background: url(/static/images/index/home_bnt_dibu.png) no-repeat center;
 		background-size:cover;
 	}
 	.register .register_slogan{

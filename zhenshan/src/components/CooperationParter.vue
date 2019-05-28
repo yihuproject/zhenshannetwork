@@ -7,9 +7,9 @@
             <slogan title="合作加盟我们的前景"></slogan>
             <div class="cooperation_parter_prospect_img">
                 <img v-lazy="img1">
-                <div class="cooperation_parter_prospect_img_detail">
+                <div class="cooperation_parter_prospect_img_detail" style="background:url(/static/images/parter/kuangkuang_bnt.png) no-repeat center">
                     <div class="cooperation_parter_prospect_img_detail_text" v-for="(item,index) in prospect">
-                        <span>{{index+1}}</span>
+                        <span style="background:url(/static/images/parter/icon_lc_xhao.png) no-repeat center;background-size: cover;">{{index+1}}</span>
                         <p>{{item}}</p>
                     </div>
                 </div>
@@ -146,7 +146,6 @@
             .cooperation_parter_prospect_img_detail
                 width: 55.67rem
                 height: 31.75rem
-                background:url(/static/images/parter/kuangkuang_bnt.png) no-repeat center
                 background-size:cover
                 margin-left: -10rem
                 margin-top: 0.8rem
@@ -164,8 +163,7 @@
                     span
                         display:inline-block
                         width: 1.5rem
-                        height: 1.5rem
-                        background:url(/static/images/parter/icon_lc_xhao.png) no-repeat center
+                        height: 1.7rem
                         background-size:cover
                         color:#fff
                         text-align:center

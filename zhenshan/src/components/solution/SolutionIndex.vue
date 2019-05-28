@@ -29,7 +29,7 @@
                         <!-- slides -->
                         <swiper-slide v-for="(imgArr,index) in index.cases.imgPath">
                             <div class="el_item_list" style="margin: 0 auto;display: flex;flex-flow: row nowrap;justify-content: space-around;" :style="{marginTop:centerHeight}">
-                                <img v-lazy="img.img" alt="" v-for="(img,index) in imgArr"  :style="{height:swiperImgHeight}">
+                                <img :src="img.img" alt="" v-for="(img,index) in imgArr"  :style="{height:swiperImgHeight}">
                             </div>
                         </swiper-slide>
                         <!-- Optional controls -->

@@ -2,7 +2,7 @@
 	<div class="share">
 		<slogan title="将想法和焦点与您一起分享" detail="知识分享,一起成长,分享,共建"></slogan>
 		<div class="share_content">
-			<div class="share_content_news">
+			<div class="share_content_news" style="background: url(/static/images/index/bnt_news.png) no-repeat center;">
 				<div class="share_content_news_text">
 					<span>公司新闻</span>
 					<p>COMPANY NEWS</p>
@@ -19,8 +19,7 @@
 							<span>{{item.day}}</span>
 							<i>{{item.date}}</i>
 						</div>
-						<div class="share_content_column2_date_arrow">
-							
+						<div class="share_content_column2_date_arrow" style="background: url(/static/images/index/icon_jiantou.png) no-repeat center">
 						</div>
 					</div>
 				</li>
@@ -34,15 +33,11 @@
 					<div class="share_content_column3_content">
 						<span>{{item.title}}</span>
 						<p>{{item.detail}}</p>
-						<i></i>
+						<i style="background: url(/static/images/index/icon_jiantou.png) no-repeat center"></i>
 					</div>
 				</li>
 			</ul>
 		</div>
-		
-		
-		
-		
 	</div>
 </template>
 <script>
@@ -132,7 +127,6 @@
 		width:32rem;
 		height:40.5rem;
 		margin-right: 1rem;
-		background: url(/static/images/index/bnt_news.png) no-repeat center;
 		background-size:cover;
 		position: relative;
 	}
@@ -237,7 +231,6 @@
 		width: 2rem;
 		height: 1.16rem;
 		margin: 3px 0;
-		background: url(/static/images/index/icon_jiantou.png) no-repeat center;
 		background-size: cover;
 		float: right;
 		margin: 3rem 0;
@@ -311,7 +304,6 @@
 	.share .share_content .share_content_column3>li>.share_content_column3_content i{
 		width: 2rem;
 		height: 1.16rem;
-		background: url(/static/images/index/icon_jiantou.png) no-repeat center;
 		background-size: cover;
 		display: inline-block;
 		margin-top:1.5rem;

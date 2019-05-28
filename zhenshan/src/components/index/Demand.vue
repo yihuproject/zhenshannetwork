@@ -1,5 +1,5 @@
 <template>
-	<div class="demand">
+	<div class="demand" style="background: url(/static/images/index/home_bnt_zhineng.png) no-repeat center;">
         <slogan title="智能商业服务生态，满足广泛的业务需求" detail="联合服务商、开发者、合作伙伴，服务千万中小企业" color="#fff"></slogan>
 		<div class="demand_classify">
 				<a v-for="(item,index) in demand" :key="index" class="demand_classify_navigator">
@@ -107,7 +107,6 @@
 	.demand{
 		width: 100%;
 		height: 56rem;
-		background: url(/static/images/index/home_bnt_zhineng.png) no-repeat center;
 		background-size:cover;
 	}
 	.demand .demand_classify{

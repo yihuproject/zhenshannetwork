@@ -1,5 +1,5 @@
 <template>
-	<div class="transition_block">
+	<div class="transition_block" style="background: url(/static/images/solution_cases/wfx_ic_djg_bnt.png) no-repeat center;">
         <slogan title="等级奖励功能，会员激励竞争结算" detail="你可以根据您会员的等级，设置不同的推荐购买提成，激发用户重复消费，消费越多，提成越多。" :color="color"></slogan>
 		<div class="demand_classify">
 				<a v-for="(item,index) in arr" :key="index" class="demand_classify_navigator">
@@ -79,7 +79,6 @@
 	.transition_block{
 		width: 100%;
 		height: 51rem;
-		background: url(/static/images/solution_cases/wfx_ic_djg_bnt.png) no-repeat center;
 		background-size:cover;
 	}
 	.transition_block .demand_classify{

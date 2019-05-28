@@ -2,9 +2,9 @@
 		<div class="bulletin_board">
 			<div class="bulletin_board_arr">
 				<p class="navigator"><span>最新公告</span></p>
-				<p class="navigator"><i>臻善组织架构全新升级</i></p>
-				<p class="navigator"><i>臻善小程序被评为深圳大数据企业...</i></p>
-				<p class="navigator"><i>臻善小程序系统全国火热招商中...</i></p>
+				<p class="navigator"><i><b  style="background: url(/static/images/index/icon_sanjiao.png) no-repeat center;"></b>臻善组织架构全新升级</i></p>
+				<p class="navigator"><i><b  style="background: url(/static/images/index/icon_sanjiao.png) no-repeat center;"></b>臻善小程序被评为深圳大数据企业...</i></p>
+				<p class="navigator"><i><b  style="background: url(/static/images/index/icon_sanjiao.png) no-repeat center;"></b>臻善小程序系统全国火热招商中...</i></p>
 			</div>
 		</div>
 </template>
@@ -38,11 +38,9 @@
 		margin-right: 3.33rem;
 		vertical-align: middle;
 	}
-	.bulletin_board .bulletin_board_arr>.navigator i:before{
+	.bulletin_board .bulletin_board_arr>.navigator b{
 		width: 8px;
 		height: 9px;
-		content: "";
-		background: url(/static/images/index/icon_sanjiao.png) no-repeat top left;
 		position: absolute;
 		top: 1.65rem;
 		left: -1.5rem;
@@ -53,7 +51,7 @@
 		color:#666666;
 		font-size: 14px;
 		display: inline-block;
-		position: relative;
+        position: relative;
 	}
 	.bulletin_board .bulletin_board_arr>.navigator>span{
 		display: inline-block;
