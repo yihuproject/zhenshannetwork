@@ -4,7 +4,7 @@
                 <li data-all="all" v-for="(sitem,index) in obj.item" @mouseenter="handleHover(index,sitem)" :key="index" :class="{active:index == current}">
                     <div class="static_status">
                         <div class="static_status_img">
-                            <img :src="sitem.static.img" alt="">
+                            <img v-lazy="sitem.static.img" alt="">
                         </div>
                         <div class="static_status_title">
                             {{sitem.static.title}}
@@ -26,7 +26,7 @@
                         <ul class="active_status_li">
                             <li v-for="s in sitem.active.liArr">
                                     <div class="active_status_li_item_img">
-                                        <img :src="s.img" alt="">
+                                        <img v-lazy="s.img" alt="">
                                     </div>
                                     <div class="active_status_li_item_content">
                                         <p class="active_status_li_item_content_title">

@@ -2,7 +2,7 @@
     <div class="items_container" :style="{background:bgcolor}">
         <div class="item_content" :style="{flexDirection:direction,flexWrap: wrap}">
             <div class="item_img">
-                <img :src="img">
+                <img v-lazy="img">
             </div>
             <div class="item_text">
                     <p class="item_text_ltitle">{{ltitle}}</p>

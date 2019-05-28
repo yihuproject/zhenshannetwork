@@ -5,7 +5,7 @@
         <div class="index_explain">
             <slogan :title="index.title" :detail="index.detail"></slogan>
             <div class="index_explain_items">
-                <img src="/static/images/solution_cases/icon_bnt.png">
+                <img v-lazy="img1">
             </div>
         </div>
         <div class="site">
@@ -13,7 +13,7 @@
             <ul class="site_item">
                 <li v-for="site in index.site.items">
                     <div class="site_item_icon">
-                        <img :src="site.img" alt="">
+                        <img v-lazy="site.img" alt="">
                     </div>
                     <div class="site_item_content">
                         <p class="site_item_content_title">{{site.title}}</p>
@@ -29,7 +29,7 @@
                         <!-- slides -->
                         <swiper-slide v-for="(imgArr,index) in index.cases.imgPath">
                             <div class="el_item_list" style="margin: 0 auto;display: flex;flex-flow: row nowrap;justify-content: space-around;" :style="{marginTop:centerHeight}">
-                                <img :src="img.img" alt="" v-for="(img,index) in imgArr"  :style="{height:swiperImgHeight}">
+                                <img v-lazy="img.img" alt="" v-for="(img,index) in imgArr"  :style="{height:swiperImgHeight}">
                             </div>
                         </swiper-slide>
                         <!-- Optional controls -->
@@ -54,6 +54,7 @@
         },
         data(){
             return {
+                img1:"/static/images/solution_cases/icon_bnt.png",
                 swiperOption:{
                     notNextTick:true,
                     loop:true,

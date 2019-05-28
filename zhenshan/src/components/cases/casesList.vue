@@ -14,7 +14,7 @@
                 </div>
                 <div class="cases_list_active" :style="{background:item.hoverImgBgPath}">
                     <div class="cases_list_active_img" :style="{background:item.hoverImgPath}">
-                        <img :src="item.hoverImgPath">
+                        <img v-lazy="item.hoverImgPath">
                     </div>
                     <div class="cases_list_active_title">
                         {{item.title}}

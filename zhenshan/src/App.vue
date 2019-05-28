@@ -14,7 +14,6 @@ export default {
 #app {
   width: 100%;
 	height: auto;
-	font-family: "microsoft yahei";
 }
 /* @media screen and (max-width: 1200px) {
     html {

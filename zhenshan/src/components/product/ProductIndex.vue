@@ -9,7 +9,7 @@
             <div class="product_index_title_btn">立即体验</div>
         </div>
         <div class="product_index_content">
-            <img src="/static/images/product/tc_bnt_wgw.png">
+            <img v-lazy="img1">
         </div>
     </div>
 </template>
@@ -17,7 +17,7 @@
     export default{
         data(){
             return{
-                
+                img1:"/static/images/product/tc_bnt_wgw.png"
             }
         },
         components: {

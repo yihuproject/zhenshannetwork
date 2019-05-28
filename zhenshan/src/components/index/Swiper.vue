@@ -5,19 +5,19 @@
             <swiper :options="swiperOption" ref="mySwiper">
                 <!-- slides -->
                 <swiper-slide>
-                    <img src="/static/images/index/home_banner.png"  :style="{height:swiperHeight}">
+                    <img :src="img1"  :style="{height:swiperHeight}">
                     <router-link to="/solution_index" class="enter enter1">免费体验</router-link>
                 </swiper-slide>
                 <swiper-slide>
-                    <img src="/static/images/index/home_banner01.png"  :style="{height:swiperHeight}">
+                    <img :src="img2"  :style="{height:swiperHeight}">
                     <router-link to="/solution_member" class="enter enter2">立即体验</router-link>
                 </swiper-slide>
                 <swiper-slide>
-                    <img src="/static/images/index/home_banner02.png"  :style="{height:swiperHeight}">
+                    <img :src="img3"  :style="{height:swiperHeight}">
                     <router-link to="/solution_distribution" class="enter enter3">立即体验</router-link>
                 </swiper-slide>
                 <swiper-slide>
-                    <img src="/static/images/index/home_banner03.png"  :style="{height:swiperHeight}">
+                    <img :src="img4"  :style="{height:swiperHeight}">
                     <router-link to="/solution_mall" class="enter enter4">立即体验</router-link>
                 </swiper-slide>
                 <!-- Optional controls -->
@@ -31,15 +31,19 @@
 	export default{
 		data(){
 			return {
+                img1:"/static/images/index/home_banner.png",
+                img2:"/static/images/index/home_banner01.png",
+                img3:"/static/images/index/home_banner02.png",
+                img4:"/static/images/index/home_banner03.png",
                 swiperOption:{
                     notNextTick:true,
                     loop:true,
-                    autoplay:false,
-                    // autoplay:{
-                    //   delay:1000,
-                    //     stopOnLastSlide:false,
-                    //     disableOnInteraction:false
-                    // },
+                    autoplay:true,
+                    autoplay:{
+                      delay:1000,
+                        stopOnLastSlide:false,
+                        disableOnInteraction:false
+                    },
                     speed:1000,
                     grabCursor:true,
                     initialSlide:0,//初始化索引

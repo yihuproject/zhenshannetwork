@@ -14,7 +14,7 @@
                     </p>
                 </div>
                 <div class="solution_member_explain_content_img">
-                    <img src="/static/images/solution_cases/why_bnt_bj.png">
+                    <img v-lazy="img1">
                 </div>
             </div>
         </div>
@@ -24,7 +24,7 @@
                 <li class="solution_member_func_content_li" v-for="item in tagArr">
                     <div class="solution_member_func_content_container">
                         <div class="solution_member_func_content_container_poi">
-                            <img :src="item.img" alt="">
+                            <img v-lazy="item.img" alt="">
                             <span>{{item.title}}</span>
                             <i>{{item.detail}}</i>
                         </div>
@@ -55,6 +55,7 @@
         },
         data(){
             return{
+                img1:"/static/images/solution_cases/why_bnt_bj.png",
                 solutionMember:{
                     title:"什么叫做微会员？",
                     detail:"专注于提升门店会员管理和营销效率， 提升门店核心竞争力。"

@@ -5,7 +5,7 @@
             <swiper :options="swiperOption" ref="mySwiper">
                 <!-- slides -->
                 <swiper-slide v-for="(item,index) in  dDemand">
-                    <img :src="item" alt="">
+                    <img v-lazy="item" alt="">
                 </swiper-slide>
                 <!-- Optional controls -->
                 <div class="swiper-button-prev"  slot="button-prev" ref="prev"><img src="/static/images/solution_cases/wfx_ic_jm_jtz.png"></div>

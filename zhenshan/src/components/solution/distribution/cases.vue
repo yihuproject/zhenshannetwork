@@ -7,11 +7,11 @@
                         <p class="demand_classify_text_title">{{item.title}}</p>
                         <p class="demand_classify_text_detail">{{item.detail}}</p>
 					</div>
-					<div class="demand_classify_arr" :style="{background:item.imgPath}">
+					<div class="demand_classify_arr" v-lazy:background-image = "{src:item.imgPath}">
 						<ul class="demand_classify_arr_container">
                             <li v-for="li in item.liArr">
                                 <div class="demand_classify_arr_container_icon">
-                                    <img :src="item.icon" alt="">
+                                    <img v-lazy="item.icon" alt="">
                                 </div>
                                 <div class="demand_classify_arr_container_text">
                                     {{li}}

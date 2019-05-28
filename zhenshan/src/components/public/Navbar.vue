@@ -3,10 +3,9 @@
 	<div class="navbar_hover_back">
 		<div class="container">
 			<div class="logo">
-				<router-link to="/"><img src="/static/images/index/logo.png" alt=""></router-link>
+				<router-link to="/"><img v-lazy="img1" alt=""></router-link>
 			</div>
 			<div class="menu">
-                
 				<router-link to="/" class="navigator home_active"><i>首页</i></router-link>
 				<router-link to="/solution_index" class="navigator home_active" >
                     <i>解决方案</i>
@@ -38,6 +37,7 @@
 export default {
   data(){
 	  return {
+          img1:"/static/images/index/logo.png",
 		  header:{
 		  	  logo:{
 		  		  text:"臻善网络"

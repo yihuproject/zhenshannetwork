@@ -4,7 +4,7 @@
         <ul class="advantages_items">
             <li v-for="item in items">
                 <div class="advantages_icon ">
-                    <img :src="item.icon">
+                    <img v-lazy="item.icon">
                 </div>
                 <p class="advantages_detail">
                     {{item.detail}}

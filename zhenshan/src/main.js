@@ -10,8 +10,10 @@ import './assets/reset.css'
 import './assets/styl.styl'
 import VueAwesomeSwiper from 'vue-awesome-swiper'
 import 'swiper/dist/css/swiper.css'
+import VueLazyload from "vue-lazyload"
 Vue.use(VueAwesomeSwiper, /* { default global options } */)
 Vue.use(ElementUI)
+Vue.use(VueLazyload)
 Vue.config.productionTip = false
 /* eslint-disable no-new */
 new Vue({

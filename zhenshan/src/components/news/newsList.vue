@@ -3,7 +3,7 @@
         <div class="news_list_items">
             <router-link :to="item.link" tag="div" class="news_list_items_item" v-for="item in newsList">
                 <div class="news_list_items_item_img">
-                    <img :src="item.img">
+                    <img v-lazy="item.img">
                 </div>
                 <div class="news_list_items_item_content">
                     <p class="news_list_items_item_content_title">{{item.title}}</p>

@@ -2,7 +2,7 @@
     <div class="news_menu">
             <div class="news_menu_after_banner">
                 <div class="news_menu_after_banner_img" v-for="i in menu.img">
-                    <img :src="i.img" alt="">
+                    <img v-lazy="i.img" alt="">
                     <span>{{i.text}}</span>
                 </div>
             </div>

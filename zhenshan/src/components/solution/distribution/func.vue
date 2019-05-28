@@ -5,8 +5,8 @@
 				<a v-for="(item,index) in arr" :key="index" class="demand_classify_navigator" :class="{active:index == current}" @mouseover="changeImg(index)"
                 @mouseleave="changeImg2(index)">
 					<div class="demand_classify_img">
-						<img class="static_img" :src="item.imgPath"/>
-						<img class="active_img" :src="item.imgPath1"/>
+						<img class="static_img" v-lazy="item.imgPath"/>
+						<img class="active_img" v-lazy="item.imgPath1"/>
 					</div>
 					<div class="demand_classify_text">
 						<div class="demand_classify_text_title">

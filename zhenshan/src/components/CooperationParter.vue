@@ -6,7 +6,7 @@
         <div class="cooperation_parter_prospect">
             <slogan title="合作加盟我们的前景"></slogan>
             <div class="cooperation_parter_prospect_img">
-                <img src="/static/images/parter/dl_bnt.png" alt="">
+                <img v-lazy="img1">
                 <div class="cooperation_parter_prospect_img_detail">
                     <div class="cooperation_parter_prospect_img_detail_text" v-for="(item,index) in prospect">
                         <span>{{index+1}}</span>
@@ -20,7 +20,7 @@
             <div class="cooperation_parter_support_items">
                 <div class="cooperation_parter_support_item" v-for="item in support">
                     <div class="cooperation_parter_support_item_img">
-                        <img :src="item.imgPath" alt="">
+                        <img v-lazy="item.imgPath">
                     </div>
                     <div class="cooperation_parter_support_item_title">
                         {{item.title}}
@@ -35,7 +35,7 @@
             <slogan title="我们的代理商分布"></slogan>
             <dataScroll color="#fff"></dataScroll>
             <div class="cooperation_parter_scatter_img">
-                <img src="/static/images/parter/bnt_ditu.png">
+                <img v-lazy="img2">
             </div>
         </div>
         <div class="cooperation_parter_process">
@@ -69,6 +69,8 @@
         },
         data(){
             return{
+                img1:"/static/images/parter/dl_bnt.png",
+                img2:"/static/images/parter/bnt_ditu.png",
                 prospect:[
                     "小程序自身行业火热，千亿级市场红利，庞大的用户商家",
                     "微信小程序产品品质获大众认可，50万小程序里有5万小程序由91微信小程序制作",
