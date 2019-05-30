@@ -61,15 +61,15 @@
 			height:auto;
         }	
     .banner .items .banner_enter{
-                position:absolute;
-                bottom: 6.58vw;
-                left: 19.5vw;
-                width: 9vw;
-                height: 3vw;
-                line-height: 3vw;
-                text-align: center;
-                font-size: 16px;
-                display: inline-block;
-                color:#fff;
+        position:absolute;
+        bottom: 6.58vw;
+        left: 19.5vw;
+        width: 9vw;
+        height: 3vw;
+        line-height: 3vw;
+        text-align: center;
+        font-size: 16px;
+        display: inline-block;
+        color:#fff;
             }     
 </style>

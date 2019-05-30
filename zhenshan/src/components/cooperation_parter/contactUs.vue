@@ -1,5 +1,5 @@
 <template>
-    <div class="contactus">
+    <div class="contactus" style="background: url(/static/images/parter/dl_icon_bnt.png) no-repeat center;">
         <slogan title="联系我们" color="#fff"></slogan>
         <div class="contactus_center">
             <div class="contactus_center_form">
@@ -35,12 +35,10 @@
         },
     }
 </script>
-
 <style>
     .contactus{
         width: 100%;
         height: 50rem;
-        background: url(/static/images/parter/dl_icon_bnt.png) no-repeat center;
         background-size:cover;
     }
     .contactus .contactus_center{

@@ -12,8 +12,10 @@ export default {
 
 <style>
 #app {
-  width: 100%;
+    width: 100%;
 	height: auto;
+    margin: 0;
+    padding: 0;
 }
 /* @media screen and (max-width: 1200px) {
     html {

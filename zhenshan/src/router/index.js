@@ -23,11 +23,15 @@ import ProductIndex from '@/components/product/ProductIndex'
 import ProductMember from '@/components/product/ProductMember'
 import ProductDistribution from '@/components/product/ProductDistribution'
 import ProductMall from '@/components/product/ProductMall'
-
+//system
+import System from '@/components/System'
+import Login from '@/components/system/Login'
+import Register from '@/components/system/Register'
 Vue.use(Router)
 export default new Router({
   linkActiveClass:'pl_active',
   routes: [
+    //index
     {
       path: '/',
       name: 'Index',
@@ -38,6 +42,7 @@ export default new Router({
 		  name: 'Index',
 		  component: Index
 		},
+    //solution
     {
       path: '/solution',
       name: 'solution',
@@ -70,11 +75,13 @@ export default new Router({
         }
       ]
     },
+    //about
     {
       path:"/about",
       name:"about",
       component:About
     },
+    //news
     {
       path:"/news",
       name:"news",
@@ -97,6 +104,7 @@ export default new Router({
         }
       ]
     },
+    //cases
     {
       path:"/cases",
       name:"cases",
@@ -114,11 +122,13 @@ export default new Router({
         }
       ]
     },
+    //parter
     {
       path:"/parter",
       name:"parter",
       component:cooperationParter,
     },
+    //product
     {
       path:"/product",
       name:"product",
@@ -148,6 +158,29 @@ export default new Router({
           path:"/Product_mall",
           name:"Product_mall",
           component:ProductMall
+        }
+      ]
+    },
+    //system
+    {
+      path:"/system",
+      name:"system",
+      component:System,
+      children:[
+        {
+          path:"/",
+          name:"login",
+          component:Login,
+        },
+        {
+          path:"/login",
+          name:"login",
+          component:Login,
+        },
+        {
+          path:"/register",
+          name:"register",
+          component:Register,
         }
       ]
     }

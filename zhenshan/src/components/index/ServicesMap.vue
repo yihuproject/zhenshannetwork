@@ -14,7 +14,7 @@
 			</ul>
 		</div>
 		<div class="services_map_img">
-			<div class="map">
+			<div class="map" style="background: url(/static/images/index/bnt_ditu.png) no-repeat center;">
             </div>
 		</div>
 	</div>
@@ -128,7 +128,6 @@
         width: 75.34rem;
         height: 75.34rem;
         margin: 0 auto;
-    	background: url(/static/images/index/bnt_ditu.png) no-repeat center;
         background-size: cover;
     }
 </style>
