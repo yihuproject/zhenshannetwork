@@ -53,13 +53,16 @@ export default {
 </script>
 
 <style>
+  @media screen and (max-width:1200px) {
+    
+  }
     @keyframes navbar{
         0%{
             width: 100%;
             min-height:0;
             background: #fff;
             position: absolute;
-            top: 15rem;
+            top: 15px;
             left: 0;
             height: 0;
             overflow: hidden;
@@ -68,13 +71,13 @@ export default {
         100%{
             width: 100%;
             height: auto;
-            top: 5rem;
+            top: 5px;
             opacity: 1;
         }
     }
 .navbar{
 	width: 100%;
-	height: 5rem;
+	height: 60px;
 	font-family: "microsoft yahei";
 	background:none;
     position: absolute;
@@ -84,7 +87,7 @@ export default {
 }
 .navbar .navbar_hover_back{
 	width: 100%;
-	height: 5rem;
+	height: 60px;
 	background:none;
 	transition: background-color .8s;
 }
@@ -92,8 +95,8 @@ export default {
 	background:rgba(0,0,0,0.15);
 }
 .navbar .container{
-	width: 100rem;
-	height: 5rem;
+	width: 1200px;
+	height: 60px;
 	color:#fff;
 	display: flex;
 	margin: 0 auto;
@@ -102,33 +105,33 @@ export default {
 	align-items: center;
 }
 .navbar .container .logo{
-	width: 12.5rem;
+	width: 150px;
 	font-size: 24px;
 	text-align: left;
-	height: 3.3rem;
-    color:#fff;
-    margin-top: 0.85rem;
+	height: 39.6px;
+  color:#fff;
+  margin-top: 11px;
 }
 .navbar .container .logo img,.navbar .container .logo a{
-	width: 12.5rem;
-	height: 3.3rem;
+	width: 150px;
+	height: 39.6px;
 }
 .navbar .container .menu{
-	width: 60rem;
-	height: 5rem;
+	width: 720px;
+	height: 60px;
 }
 .navbar .container .menu>.navigator:first-child{
-	margin-left: 8.6rem;
+	margin-left: 104px;
 }
 .navbar .container .menu>.navigator{
-    display: inline-block;
+  display: inline-block;
 	width: auto;
-	height: 5rem;
-	line-height: 5rem;
+	height: 60px;
+	line-height: 60px;
 	color:#fff;
 	float: left;
 	font-size: 14px;
-	padding: 0 1.5rem;
+	padding: 0 18px;
     position: relative;
 }
 .navbar .container .menu>.navigator .navigator_level2{
@@ -136,7 +139,7 @@ export default {
     min-height:0;
     background: #fff;
     position: absolute;
-    top: 15rem;
+    top: 180px;
     left: 0;
     height: 0;
     overflow: hidden;
@@ -145,14 +148,14 @@ export default {
 .navbar .container .menu>.navigator:hover .navigator_level2{
     width: 100%;
     height: auto;
-    top: 5rem;
+    top: 60px;
     opacity: 1;
-    animation: navbar .8s ease-in 1;
+    animation: navbar .5s ease-in 1;
 }
 .navbar .container .menu>.navigator .navigator_level2 .navigator_level2_center{
     width: 100%;
     height: auto;
-    line-height: 3.5rem;
+    line-height: 42px;
     text-align: center;
 }
 .navbar .container .menu>.navigator .navigator_level2 .navigator_level2_center a:hover{
@@ -165,21 +168,21 @@ export default {
     font-size: 14px;
 }
 .navbar .container .func{
-	width: 23.49rem;
-	height: 3.75rem;
+	width: 282px;
+	height: 45px;
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: space-between;
 	align-items: center;
 }
 .navbar .container .func .navigator{
-	width: 5.83rem;
-	height: 2.5rem;
-	line-height: 2.5rem;
+	width: 70px;
+	height: 30px;
+	line-height: 30px;
 	font-size: 14px;
 	padding: 0;
-	margin: 2.5rem 0;
-	margin-left: 2rem;
+	margin: 30px 0;
+	margin-left: 2px;
 	border:1px solid #fff;
 	text-align: center;
 	color:#fff;

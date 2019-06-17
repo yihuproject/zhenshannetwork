@@ -34,43 +34,35 @@ export default new Router({
     //index
     {
       path: '/',
-      name: 'Index',
       component: Index
     },
 		{
 		  path: '/index',
-		  name: 'Index',
 		  component: Index
 		},
     //solution
     {
       path: '/solution',
-      name: 'solution',
       component: Solution,
       children:[
         {
           path:"/",
-          name:"solution",
           component:SolutionIndex
         },
         {
           path:"/solution_index",
-          name:"solution",
           component:SolutionIndex
         },
          {
           path:"/solution_member",
-          name:"solution_member",
           component:SolutionMember
         },
         {
           path:"/solution_distribution",
-          name:"solution_distribution",
           component:SolutionDistribution
         },
          {
           path:"/solution_mall",
-          name:"solution_mall",
           component:SolutionMall
         }
       ]
@@ -78,28 +70,23 @@ export default new Router({
     //about
     {
       path:"/about",
-      name:"about",
       component:About
     },
     //news
     {
       path:"/news",
-      name:"news",
       component:News,
       children:[
         {
           path:"/news_detail",
-          name:"news_detail",
           component:NewsContent
         },
         {
           path:"/news_menu",
-          name:"news_menu",
           component:NewsMenu
         },
          {
           path:"/",
-          name:"news_menu",
           component:NewsMenu
         }
       ]
@@ -107,17 +94,14 @@ export default new Router({
     //cases
     {
       path:"/cases",
-      name:"cases",
       component:Cases,
       children:[
         {
           path:"/",
-          name:"cases",
           component:CasesList,
         },
         {
           path:"/cases_list",
-          name:"cases",
           component:CasesList,
         }
       ]
@@ -125,38 +109,31 @@ export default new Router({
     //parter
     {
       path:"/parter",
-      name:"parter",
       component:cooperationParter,
     },
     //product
     {
       path:"/product",
-      name:"product",
       component:Product,
       children:[
         {
           path:"/",
-          name:"product_index",
           component:ProductIndex
         },
         {
           path:"/product_index",
-          name:"product_index",
           component:ProductIndex
         },
         {
           path:"/Product_member",
-          name:"Product_member",
           component:ProductMember
         },
         {
           path:"/Product_distribution",
-          name:"Product_distribution",
           component:ProductDistribution
         },
         {
           path:"/Product_mall",
-          name:"Product_mall",
           component:ProductMall
         }
       ]
@@ -164,22 +141,18 @@ export default new Router({
     //system
     {
       path:"/system",
-      name:"system",
       component:System,
       children:[
         {
           path:"/",
-          name:"login",
           component:Login,
         },
         {
           path:"/login",
-          name:"login",
           component:Login,
         },
         {
           path:"/register",
-          name:"register",
           component:Register,
         }
       ]

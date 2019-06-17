@@ -87,9 +87,9 @@
         position: absolute;
         bottom: 6.58vw;
         left: 19.5vw;
-        width: 9vw;
-        height: 3vw;
-        line-height: 3vw;
+        width: 79px;
+        height: 30px;
+        line-height: 30px;
         text-align: center;
         font-size: 16px;
         display: inline-block;
